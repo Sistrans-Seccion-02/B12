@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3079D93-9920-B058-53AE-04810AA4CB5B" name="Servicios_habitaciones">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>FB5CDD30-6682-BE50-A79C-6B51AAE48C4D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipo_servicio" id="D35655D7-9F3C-F39D-877B-589ED12BFF2F">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>2F9B0749-E972-2B0D-C7E4-68716ADBDFEA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contratado" id="DBFCC0A5-E46B-67C1-3350-BCDD4E609695">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>DAF1F0CA-2419-A1C9-0FE8-DF665D76139C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Servicio_habitacion_ID" id="A1E704DD-E10C-BC47-46E1-6AD1249CCF6E">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8F25A17-69FB-5DDB-0579-A4D1D4216118" name="Servicio_habitacion_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A1E704DD-E10C-BC47-46E1-6AD1249CCF6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

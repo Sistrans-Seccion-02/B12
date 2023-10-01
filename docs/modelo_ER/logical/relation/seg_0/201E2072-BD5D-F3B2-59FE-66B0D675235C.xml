@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiene_gerente" directorySegmentName="seg_0" id="201E2072-BD5D-F3B2-59FE-66B0D675235C">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-09-30 17:50:13 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6BF2DBAF-B640-0976-40E1-6F7EFE4153D7</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9CCC58F8-DD04-3681-EE26-FB37CAAC6535</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

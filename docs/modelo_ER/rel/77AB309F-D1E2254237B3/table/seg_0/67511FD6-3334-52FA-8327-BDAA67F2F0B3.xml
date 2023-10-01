@@ -1,0 +1,234 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67511FD6-3334-52FA-8327-BDAA67F2F0B3" name="Usuarios">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>0FA3FA67-7187-DEE2-067C-89B846071AD3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>usuario</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre" id="7837A99A-C1DB-349A-E998-00D771079D57">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>84848FA5-E47E-8DDF-DE1F-8D3868A252F2</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="3EB64DCE-3DE4-5AF8-E4A4-BCC087E42526">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>9751F2FB-B71C-2BBA-2B31-B4A9C8C3B7F7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="8F42023E-04CD-5476-0414-67CB6B963612">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>382CAF35-35CE-6802-AF69-DC33A7EE7190</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Administrador_ID" id="0778B2D6-711C-C8E0-7126-BF9D0BF72668">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C587431-B8C0-3537-9F2A-BFFB6DA6CBE6" referredColumn="5756F6B0-65D3-4DC7-F5F7-26C3FB77C5B7"/>
+</associations>
+</Column>
+<Column name="Cliente_ID" id="49A53137-2235-BE34-22FC-B14B13099279">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E47EC79E-3E96-7DE1-523D-50F8DFEB6424" referredColumn="7B690028-A305-6738-FB89-AEBD33E1CC54"/>
+</associations>
+</Column>
+<Column name="Empleado_ID" id="594B94A2-24ED-C783-8876-DDF5C34B8CA7">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51D09F98-8BEF-6706-7CC4-4041C3937E60" referredColumn="22CAED16-F00D-ED7F-E448-D755DE276EE7"/>
+</associations>
+</Column>
+<Column name="Gerente_ID" id="7D060C0B-AD16-3AD8-0423-15BA70AABC0E">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45F4B853-7BE7-BF34-6C8A-8846C7F61CFB" referredColumn="5FA7D8DD-D027-C1CA-202D-B637276AC299"/>
+</associations>
+</Column>
+<Column name="Recepcionista_ID" id="E7B3A023-A31C-6581-3A10-8D948C180273">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35CCA42D-A9E5-C17F-D944-E4785CE0B385" referredColumn="BF671B34-CF25-4378-E2DA-86018C29C3EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB7D90F3-7161-A46A-70C9-58AF64CEDF95" name="Usuario__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E2756FCA-E564-3A88-2648-9E74CDC17498</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0778B2D6-711C-C8E0-7126-BF9D0BF72668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31F9BE4E-542A-D420-8A78-400F6B1ACA5D" name="Usuario__IDXv1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>973BEF5A-7C05-CFEF-1F38-FD3680A80B4F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="49A53137-2235-BE34-22FC-B14B13099279"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1770139-61C0-D5D0-0BE2-C12843111800" name="Usuario__IDXv2">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>84ADAADA-285B-500B-EDB1-4FD6EA1585C0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="594B94A2-24ED-C783-8876-DDF5C34B8CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EB234A-1D91-FE04-C679-4D28558D2273" name="Usuario__IDXv3">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>548BE8A6-2A2F-3607-35FB-9EBD6EDB4B33</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7D060C0B-AD16-3AD8-0423-15BA70AABC0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EF2D24B-6FE3-AA51-0B8C-3A1ED7AC5E2D" name="Usuario__IDXv4">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EDF8136B-684C-0644-64BD-E981C66B961C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E7B3A023-A31C-6581-3A10-8D948C180273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC71B6B0-F31C-F177-3C12-DF49BC23E14D" name="Usuarios_Administradores_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>E2756FCA-E564-3A88-2648-9E74CDC17498</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0778B2D6-711C-C8E0-7126-BF9D0BF72668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17AC7535-92E2-E3F8-37F8-CD0222600A32" name="Usuarios_Clientes_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>973BEF5A-7C05-CFEF-1F38-FD3680A80B4F</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49A53137-2235-BE34-22FC-B14B13099279"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEF9BD5C-FEE0-2848-2F3A-3FC1368DDADF" name="Usuarios_Empleados_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>84ADAADA-285B-500B-EDB1-4FD6EA1585C0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="594B94A2-24ED-C783-8876-DDF5C34B8CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="924CE11C-66A4-1987-5AF7-8658F3A1FD8C" name="Usuarios_Gerente_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>548BE8A6-2A2F-3607-35FB-9EBD6EDB4B33</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D060C0B-AD16-3AD8-0423-15BA70AABC0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A053951-7E2C-B324-EF12-9183AE6E4802" name="Usuarios_Recepcionistas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>EDF8136B-684C-0644-64BD-E981C66B961C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7B3A023-A31C-6581-3A10-8D948C180273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

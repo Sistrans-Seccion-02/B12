@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="017C9CF7-B4B8-FFE1-7299-232EF3466EAD" name="Tienen_descuentos_servicios">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>tienen_descuentos_servicios</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Servicio_Servicio_ID" id="C5C9863F-03C8-F88E-786A-428F95F0BFFC">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBE3E2EC-1BA4-73E5-78F0-CC9258FE1A87" referredColumn="7FB5DB3F-3BE4-8541-CEA9-3139C75A0068"/>
+</associations>
+</Column>
+<Column name="Descuentos_Descuento_ID" id="A2A92CF5-CDF6-8B85-35A7-0BD3E35728C6">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="047EEABE-6F5C-3041-613D-E31B253AC1F1" referredColumn="065F9104-F78E-ED2A-C39E-A2ABFB1A9071"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E94C2C87-3CC1-551C-1DFA-F03F4068A8A4" name="Tienen_desc_servicios_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5C9863F-03C8-F88E-786A-428F95F0BFFC"/>
+<colUsage columnID="A2A92CF5-CDF6-8B85-35A7-0BD3E35728C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66F9368A-D45F-FCEF-7B65-A7992F013356" name="Tienen_descuento_Servicio_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<generatorID>12CA07EE-EBE0-4F7C-8648-521039881C71</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5C9863F-03C8-F88E-786A-428F95F0BFFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAF5F7AD-1389-AA45-8F28-90C638B36C9F" name="Tienen_desc_Descuentos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<generatorID>12CA07EE-EBE0-4F7C-8648-521039881C71</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A92CF5-CDF6-8B85-35A7-0BD3E35728C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

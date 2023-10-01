@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4375C103-A897-6EC5-298F-6C3325DBC497" containerWithKeyObject="5FDDF86E-B909-2369-D781-FB6236B02A97" localFKIndex="6F8C87D0-DBB6-A7F5-A63A-48096EA8E969" name="Tiene_plan_consumo_Hotel_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>CD71F2AA-EB52-9BC3-584F-B9EE68A142AC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>Hotel</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C407828C-97CA-9828-B354-24A865CD38C2</referredTableID>
+<keyObject>1E2A21CB-3DB9-15EE-BD0B-465B0201F4FF</keyObject>
+<referredKeyID>1E2A21CB-3DB9-15EE-BD0B-465B0201F4FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Hotel_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

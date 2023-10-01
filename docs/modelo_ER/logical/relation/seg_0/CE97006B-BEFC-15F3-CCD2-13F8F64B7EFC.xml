@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Supermercado_hereda_servicio" directorySegmentName="seg_0" id="CE97006B-BEFC-15F3-CCD2-13F8F64B7EFC">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:47:42 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BED2C0B5-6672-62B8-1551-B3E2DBF50B6A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4925BF15-8FB1-5C80-5091-7BC840D929E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

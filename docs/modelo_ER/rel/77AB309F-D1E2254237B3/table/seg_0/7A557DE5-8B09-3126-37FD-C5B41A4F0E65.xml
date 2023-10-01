@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A557DE5-8B09-3126-37FD-C5B41A4F0E65" name="Consumos">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>ABF9F5D5-4D53-D97D-6DCB-048E561BF8A1</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="total" id="AD4BD9BA-E9FE-F426-BC9C-32ADDFAE67CB">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>408BA6E9-E0A1-8190-39AE-6D3D8A43FECA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Consumo_ID" id="898FDDA9-FE94-D82D-2DF6-3D12FAF647D0">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Cliente_ID" id="86135E37-9084-537C-18AF-6E517B4EFE39">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C12C9DE7-CA92-4505-F189-86DD122FBF1A" referredColumn="7B690028-A305-6738-FB89-AEBD33E1CC54"/>
+</associations>
+</Column>
+<Column name="Cuenta_ID" id="F41F8B0F-9151-F8DD-4696-B1D8DD15A35B">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40575C99-0A57-DD12-0B69-BB44CD8FE35C" referredColumn="E96EF24A-512F-F055-F08A-A155159DE91D"/>
+</associations>
+</Column>
+<Column name="Descuento_ID" id="30762C0D-08B5-DD79-E7AB-E28AC16DDA06">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08303637-2336-8EFA-397E-3791266375E1" referredColumn="065F9104-F78E-ED2A-C39E-A2ABFB1A9071"/>
+</associations>
+</Column>
+<Column name="Producto_ID" id="470166E3-DCEC-DFBD-E778-25BFC309AF1D">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F351F794-F6B2-9BD8-BFF6-865B984E0D00" referredColumn="4E0BB23F-53EF-4A50-7ED8-7235DE12BDA6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20DE21A2-C865-8F89-969B-641434406897" name="Consumo_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="898FDDA9-FE94-D82D-2DF6-3D12FAF647D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08EA7D7F-60AD-B426-6322-3416E6F87DCF" name="Consumo__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AA1CD94D-31C0-2F1A-86B1-68ACF1395C91</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="86135E37-9084-537C-18AF-6E517B4EFE39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7742949B-5FB6-05A9-139A-EEF7A015E431" name="Consumo__IDXv1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>180850B1-F3B5-4BE2-710B-FC6FE88FF3CE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F41F8B0F-9151-F8DD-4696-B1D8DD15A35B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB05A093-6B67-5620-C50B-D89FAA02A5A8" name="Consumos_Clientes_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>AA1CD94D-31C0-2F1A-86B1-68ACF1395C91</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86135E37-9084-537C-18AF-6E517B4EFE39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADFE599A-E8B9-23DA-BC43-2A60D7A39884" name="Consumos_Cuentas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>180850B1-F3B5-4BE2-710B-FC6FE88FF3CE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F41F8B0F-9151-F8DD-4696-B1D8DD15A35B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17A3BF82-C3E2-69A7-8EAB-FA1C5A5C3010" name="Consumos_Descuentos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>731B036D-6721-67B5-ED3C-4F3915D7DAFD</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30762C0D-08B5-DD79-E7AB-E28AC16DDA06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C07C382-8391-21C8-212E-A47209C99C70" name="Consumos_Productos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>803F7DF8-126D-9CD2-877F-7E2B609D99E7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="470166E3-DCEC-DFBD-E778-25BFC309AF1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

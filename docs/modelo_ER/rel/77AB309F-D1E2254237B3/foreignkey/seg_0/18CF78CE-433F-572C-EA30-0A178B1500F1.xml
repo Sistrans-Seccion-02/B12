@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18CF78CE-433F-572C-EA30-0A178B1500F1" containerWithKeyObject="D93D51AC-5B27-94D0-5FE0-122279C202A4" localFKIndex="C6CF97BC-82C0-7178-F41E-D714C06C7B3A" name="Servicios_Internet_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>40436E12-4FC9-DEE1-67C4-6FC220E2C786</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>Internet</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A83E19DD-0F64-F327-7D3B-BBBE9D62ED13</referredTableID>
+<keyObject>161043E1-DC71-0F96-8CC5-3FD743DF7AF0</keyObject>
+<referredKeyID>161043E1-DC71-0F96-8CC5-3FD743DF7AF0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Internet_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

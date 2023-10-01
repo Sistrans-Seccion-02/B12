@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="61607002-F8E3-AC94-47B8-447224034FE5" containerWithKeyObject="D93D51AC-5B27-94D0-5FE0-122279C202A4" localFKIndex="4B2AC1AD-D4AA-48E8-0CC5-91DB801D19C6" name="Servicios_Aseos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>BE890BBA-C1AE-FC63-C4D4-D397D51A6AC7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>Aseos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FFDC6098-AAD1-B8AC-7EF4-06A94C1AEF15</referredTableID>
+<keyObject>487FF2EB-335E-C81B-EDEA-5878FF9E3B7F</keyObject>
+<referredKeyID>487FF2EB-335E-C81B-EDEA-5878FF9E3B7F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Aseo_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

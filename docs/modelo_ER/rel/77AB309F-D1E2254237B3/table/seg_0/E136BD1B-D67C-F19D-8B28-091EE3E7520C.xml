@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E136BD1B-D67C-F19D-8B28-091EE3E7520C" name="Supermercados">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>BED2C0B5-6672-62B8-1551-B3E2DBF50B6A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre" id="544B403D-9D30-46D0-81EC-58ABC34B942B">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>EECFB901-90DE-C21D-0E14-AD88BB1B68AE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Supermercado_ID" id="EA79004B-51E3-1433-7816-30F504566346">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Tiendas_Tiendas_ID" id="5FE60B4D-749A-9B79-1C81-DCBCBE03E4A0">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 19:07:35 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="751CA7B6-1F29-7C74-CC37-5D257BBB3665" referredColumn="074981E1-4FDC-1549-5BC6-98DCD72EAE1A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67679F73-1415-3425-4048-D7468363D2A7" name="Supermercado_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EA79004B-51E3-1433-7816-30F504566346"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD2832ED-329F-EABC-1665-BD387793E563" name="Supermercados__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 19:07:35 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>07E82B72-70F4-2707-C7AD-650BE5624B59</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5FE60B4D-749A-9B79-1C81-DCBCBE03E4A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEDE2D6F-11B2-FA9D-0361-2F29F885224B" name="Supermercados_Tiendas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 19:07:35 UTC</createdTime>
+<generatorID>07E82B72-70F4-2707-C7AD-650BE5624B59</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FE60B4D-749A-9B79-1C81-DCBCBE03E4A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

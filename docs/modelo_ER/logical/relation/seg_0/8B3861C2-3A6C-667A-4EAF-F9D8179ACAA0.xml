@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Piscina_hereda_servicio" directorySegmentName="seg_0" id="8B3861C2-3A6C-667A-4EAF-F9D8179ACAA0">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:52:42 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EA20C01A-2795-1DBA-C8F1-B969145BDF19</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4925BF15-8FB1-5C80-5091-7BC840D929E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

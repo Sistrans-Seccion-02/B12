@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FDDF86E-B909-2369-D781-FB6236B02A97" name="Tiene_plan_consumo">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Hotel_ID" id="AC424223-4F6E-6E6A-15C3-2D93BE18862B">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4375C103-A897-6EC5-298F-6C3325DBC497" referredColumn="525E4951-D2DD-E1F4-0BBD-BA70F164B14D"/>
+</associations>
+</Column>
+<Column name="Plan_consumo_ID" id="396BCAE3-B7E4-492A-882C-CC335834DDE9">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8789BBBC-1BF8-65C4-4F7C-AC055DB3B700" referredColumn="0D137FF1-F12E-2408-97BB-6C88E54454D6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D2EE2BD-635E-5BD0-4E2E-0647920B570F" name="Tiene_plan_consumo_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC424223-4F6E-6E6A-15C3-2D93BE18862B"/>
+<colUsage columnID="396BCAE3-B7E4-492A-882C-CC335834DDE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F8C87D0-DBB6-A7F5-A63A-48096EA8E969" name="Tiene_plan_consumo_Hotel_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>CD71F2AA-EB52-9BC3-584F-B9EE68A142AC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC424223-4F6E-6E6A-15C3-2D93BE18862B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBCC9193-8144-E2BE-8195-0F45533D266D" name="Tiene_Plan_consumo_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>CD71F2AA-EB52-9BC3-584F-B9EE68A142AC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="396BCAE3-B7E4-492A-882C-CC335834DDE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

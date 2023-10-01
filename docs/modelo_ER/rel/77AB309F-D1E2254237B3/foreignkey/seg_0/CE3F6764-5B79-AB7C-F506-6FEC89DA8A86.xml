@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CE3F6764-5B79-AB7C-F506-6FEC89DA8A86" containerWithKeyObject="939F8F08-8052-E7B1-5271-AA891CA5B30E" localFKIndex="DFA7B566-055E-E549-E2A3-F7F96EDCF54C" name="Tiene_prod_Super_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>3B027A9F-8580-6140-96D5-60E2AA39E2DC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>Supermercado</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E136BD1B-D67C-F19D-8B28-091EE3E7520C</referredTableID>
+<keyObject>67679F73-1415-3425-4048-D7468363D2A7</keyObject>
+<referredKeyID>67679F73-1415-3425-4048-D7468363D2A7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Supermercado_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

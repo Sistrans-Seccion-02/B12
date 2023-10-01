@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiene_productos_restaurante" directorySegmentName="seg_0" id="09CDB90A-1D3E-ABA4-EBFF-BC3135232BA5">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-09-30 23:45:12 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>79DBE7A9-AB8A-C447-B6BD-6364213C1148</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>88C0EA7B-2CF9-129C-DEDE-1A378732EFB7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

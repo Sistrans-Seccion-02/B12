@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52AABDA3-3F5E-2856-EBDE-2C5B0D1B96A9" name="Cuentas">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>C5E33914-3433-B6A6-B75D-521C0EE7A290</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>cuenta</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="valor" id="B360FE01-BDF0-7364-074F-81C065EB8AC9">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>0137FACE-AE38-1808-E56A-991E9F7EA010</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cuenta_ID" id="E96EF24A-512F-F055-F08A-A155159DE91D">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Reserva_salon_ID" id="A5339381-D82B-A839-3856-8C1A947DE082">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BE1AD7B-712C-0CF1-3874-7C85C662EA69" referredColumn="992110E9-DDC3-2BFE-92E4-86BCF161C171"/>
+</associations>
+</Column>
+<Column name="Servicio_Servicio_ID" id="62B48F2D-D862-A2F9-8A2F-D08893FC0750">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C6EFD31-4194-CA5F-A28A-BDC927ADD694" referredColumn="7FB5DB3F-3BE4-8541-CEA9-3139C75A0068"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3090C4F0-B634-42AF-E799-91345B5FA8AD" name="Cuenta_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E96EF24A-512F-F055-F08A-A155159DE91D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1A07CB4-0BEA-801C-AA9D-1C617465CFAF" name="Cuenta__IDXv2">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4B915915-BBD7-1F91-EB46-709D1764E565</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A5339381-D82B-A839-3856-8C1A947DE082"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D1BBF38-321D-01A7-E900-5CC8A422E8FF" name="Cuentas_Reservas_salones_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>4B915915-BBD7-1F91-EB46-709D1764E565</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5339381-D82B-A839-3856-8C1A947DE082"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E0E3DBD-2AE8-D225-79B7-B18453854197" name="Cuentas_Servicios_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<generatorID>A8544EEB-491B-E650-B8A7-1C2472BB217E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62B48F2D-D862-A2F9-8A2F-D08893FC0750"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

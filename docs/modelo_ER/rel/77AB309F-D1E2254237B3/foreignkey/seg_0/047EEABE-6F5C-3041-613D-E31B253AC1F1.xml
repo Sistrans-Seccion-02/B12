@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="047EEABE-6F5C-3041-613D-E31B253AC1F1" containerWithKeyObject="017C9CF7-B4B8-FFE1-7299-232EF3466EAD" localFKIndex="BAF5F7AD-1389-AA45-8F28-90C638B36C9F" name="Tienen_desc_Descuentos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:53:38 UTC</createdTime>
+<generatorID>12CA07EE-EBE0-4F7C-8648-521039881C71</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>Descuentos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6DB37AAD-D867-A302-0791-03D40484CF01</referredTableID>
+<keyObject>6CB10A14-6DE6-9D7C-1DD5-1F9E6A5334F5</keyObject>
+<referredKeyID>6CB10A14-6DE6-9D7C-1DD5-1F9E6A5334F5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Descuento_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

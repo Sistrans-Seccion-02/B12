@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiene_aseo" directorySegmentName="seg_0" id="FA67B859-2F3E-8CC1-959E-D9200A61F18A">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 00:00:20 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5E33914-3433-B6A6-B75D-521C0EE7A290</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>63FC28FB-3E57-48F0-C0CD-E06A6CB5A3E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

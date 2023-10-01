@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="939F8F08-8052-E7B1-5271-AA891CA5B30E" name="Tiene_productos_supermercados">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>tiene_productos_supermercados</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Supermercado_ID" id="0E91EB76-C967-F6F9-2799-CA27E77622B2">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE3F6764-5B79-AB7C-F506-6FEC89DA8A86" referredColumn="EA79004B-51E3-1433-7816-30F504566346"/>
+</associations>
+</Column>
+<Column name="Producto_ID" id="9D64C34A-6572-A1A9-5A26-A9BC43A383C9">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9466C013-9D85-4162-9C06-03F49E86A415" referredColumn="4E0BB23F-53EF-4A50-7ED8-7235DE12BDA6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BBDE666-2D0E-87C6-E414-8534853A1F3E" name="Tiene_prod_superm_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E91EB76-C967-F6F9-2799-CA27E77622B2"/>
+<colUsage columnID="9D64C34A-6572-A1A9-5A26-A9BC43A383C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFA7B566-055E-E549-E2A3-F7F96EDCF54C" name="Tiene_prod_Super_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>3B027A9F-8580-6140-96D5-60E2AA39E2DC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E91EB76-C967-F6F9-2799-CA27E77622B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEB89CEF-1719-10BD-D964-CEC021A7CB52" name="Tiene_prod_super_Producto_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>3B027A9F-8580-6140-96D5-60E2AA39E2DC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D64C34A-6572-A1A9-5A26-A9BC43A383C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

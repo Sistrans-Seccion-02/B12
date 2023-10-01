@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Internet_hereda_servicio" directorySegmentName="seg_0" id="40436E12-4FC9-DEE1-67C4-6FC220E2C786">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:52:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>99BA7006-DCF2-E1EB-005D-5E6ECBED88BF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4925BF15-8FB1-5C80-5091-7BC840D929E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

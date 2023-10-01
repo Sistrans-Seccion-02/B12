@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiene_reserva" directorySegmentName="seg_0" id="4B915915-BBD7-1F91-EB46-709D1764E565">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-09-30 18:15:46 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>949E8EA1-6766-2C65-91A8-D3CDB50C08C0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C5E33914-3433-B6A6-B75D-521C0EE7A290</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

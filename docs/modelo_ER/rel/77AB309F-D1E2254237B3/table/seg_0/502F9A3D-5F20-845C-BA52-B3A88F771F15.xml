@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="502F9A3D-5F20-845C-BA52-B3A88F771F15" name="Gerente">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>9CCC58F8-DD04-3681-EE26-FB37CAAC6535</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>gerente</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Gerente_ID" id="5FA7D8DD-D027-C1CA-202D-B637276AC299">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Hotel_ID" id="78A98AD5-A214-1E37-F958-4875B257DE19">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C4FB995-5B89-6660-8867-9C11C6508537" referredColumn="525E4951-D2DD-E1F4-0BBD-BA70F164B14D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2A2A41A-2F20-4A94-F6F2-9BE4272BC6F1" name="Gerente_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="5FA7D8DD-D027-C1CA-202D-B637276AC299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40692E9A-923F-02AD-2284-607F4FEA143C" name="Gerente__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>201E2072-BD5D-F3B2-59FE-66B0D675235C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="78A98AD5-A214-1E37-F958-4875B257DE19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47AA7965-629F-32E9-CD69-1A96BA2C2757" name="Gerente_Hoteles_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>201E2072-BD5D-F3B2-59FE-66B0D675235C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78A98AD5-A214-1E37-F958-4875B257DE19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Aseo_hereda_servicio" directorySegmentName="seg_0" id="BE890BBA-C1AE-FC63-C4D4-D397D51A6AC7">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:42:59 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>63FC28FB-3E57-48F0-C0CD-E06A6CB5A3E5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4925BF15-8FB1-5C80-5091-7BC840D929E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

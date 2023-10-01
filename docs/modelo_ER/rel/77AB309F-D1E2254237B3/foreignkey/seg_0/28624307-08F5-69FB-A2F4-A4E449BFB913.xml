@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="28624307-08F5-69FB-A2F4-A4E449BFB913" containerWithKeyObject="D93D51AC-5B27-94D0-5FE0-122279C202A4" localFKIndex="8FEF8A35-B93C-F500-334C-A87A3696EB25" name="Servicios_Bares_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>210CC122-4859-D941-E155-0A7117F20F4E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>Bares</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>66BE1A35-E94D-813C-8250-BFE76D9E9190</referredTableID>
+<keyObject>DF43A971-FA85-143D-33BC-0E92EEDC525A</keyObject>
+<referredKeyID>DF43A971-FA85-143D-33BC-0E92EEDC525A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Bar_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

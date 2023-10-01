@@ -1,0 +1,386 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D93D51AC-5B27-94D0-5FE0-122279C202A4" name="Servicios">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>4925BF15-8FB1-5C80-5091-7BC840D929E0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre" id="2FAA55AA-25E2-6160-8028-7F1EC7A278D2">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>0D3FAC19-A978-451B-4ED9-28F297B94D12</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad" id="88282CF4-748D-0B9A-D550-311F18BA97E8">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>664268FE-B3FB-FEBE-BA96-E602D10B45A2</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Servicio_ID" id="7FB5DB3F-3BE4-8541-CEA9-3139C75A0068">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Aseo_ID" id="0B3C60A2-905B-4695-2263-E3CE75BC4810">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61607002-F8E3-AC94-47B8-447224034FE5" referredColumn="8A0999F4-F415-C915-67FB-397F7FE027A4"/>
+</associations>
+</Column>
+<Column name="Bar_ID" id="3047EB46-FF10-BC2E-94C5-35BBF4C9B584">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28624307-08F5-69FB-A2F4-A4E449BFB913" referredColumn="8746C9DF-39D1-951A-B158-8639B3BB5553"/>
+</associations>
+</Column>
+<Column name="Gimnasio_ID" id="DD3CD721-2323-C739-3B86-18253B2E483B">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD9A6DEF-0F15-8EFD-07A4-8A344C0F362A" referredColumn="D71A8494-FD85-89C9-A5C8-BD7598D9E212"/>
+</associations>
+</Column>
+<Column name="Internet_ID" id="F7A1DA9A-C4BA-4DF8-0ADF-B7D5C8DC8693">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18CF78CE-433F-572C-EA30-0A178B1500F1" referredColumn="6A8C36E1-AA12-CD5A-C662-97E2BF58E368"/>
+</associations>
+</Column>
+<Column name="Piscina_ID" id="C6C87D3F-1F17-6F20-B7A8-E540E22AD2CE">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA036A28-2FFA-B686-BE61-A364DB540B22" referredColumn="16CF76BD-0668-A0F7-081C-63ABD1AA6DAA"/>
+</associations>
+</Column>
+<Column name="Prestamo_ID" id="D2A5F609-401D-1254-024F-462C18467A7B">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B96237B1-9C2A-EADD-A76D-5D3B088250BE" referredColumn="96F59C80-531A-5242-3235-E285CA4A688B"/>
+</associations>
+</Column>
+<Column name="Salon_ID" id="D4966A1A-E517-8FEB-4F7D-EACFCB95F00C">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1875A45F-8E41-C51F-1FC6-6631EEDAE919" referredColumn="233B6D05-3ACA-0F38-F83D-90CBD4C8364A"/>
+</associations>
+</Column>
+<Column name="Spa_ID" id="FD7366EC-0FBE-3DDC-9A21-126AD6D9C0A3">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BB9A58A-420C-4D85-2B99-93C8150A769C" referredColumn="AB0FAF86-04BB-F56E-E3F1-CFE95B449890"/>
+</associations>
+</Column>
+<Column name="Supermercado_ID" id="832E4B79-B6A5-5F59-7F15-452A23AFCDD3">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DE9B36B-50F3-4EB1-506D-F7B569700E60" referredColumn="EA79004B-51E3-1433-7816-30F504566346"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78D11708-7E20-854E-4971-85B7312DDC11" name="Servicio_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7FB5DB3F-3BE4-8541-CEA9-3139C75A0068"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB2FE65D-50A8-3B0D-E812-BDB4F54AC824" name="Servicio__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BE890BBA-C1AE-FC63-C4D4-D397D51A6AC7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0B3C60A2-905B-4695-2263-E3CE75BC4810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09688BFD-B8B1-7DDD-7997-94620BDB62B6" name="Servicio__IDXv1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>210CC122-4859-D941-E155-0A7117F20F4E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3047EB46-FF10-BC2E-94C5-35BBF4C9B584"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B150DBC-60B3-2CBF-0E83-5AA2C81A3FCB" name="Servicio__IDXv2">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>35B336CD-5D2A-0E07-1357-74131432BEB9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DD3CD721-2323-C739-3B86-18253B2E483B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03BC8876-3C66-48DE-CAD1-C488CB65D638" name="Servicio__IDXv3">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>40436E12-4FC9-DEE1-67C4-6FC220E2C786</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F7A1DA9A-C4BA-4DF8-0ADF-B7D5C8DC8693"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70D5D0B1-86DC-16EE-8AA0-4D080980A7A2" name="Servicio__IDXv4">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8B3861C2-3A6C-667A-4EAF-F9D8179ACAA0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C6C87D3F-1F17-6F20-B7A8-E540E22AD2CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49AA4B72-D5E0-D167-9F85-453742027878" name="Servicio__IDXv5">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D5A4B446-490B-28CE-2FA9-191859A3C729</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D2A5F609-401D-1254-024F-462C18467A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4120805A-EBD6-DF3E-3D74-2CC6932EE99E" name="Servicio__IDXv6">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BB846EF3-33E1-BDFF-7477-792880341630</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D4966A1A-E517-8FEB-4F7D-EACFCB95F00C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="493F044F-B8DC-FD6F-A1A2-E105967EB89D" name="Servicio__IDXv7">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C1A72448-20E5-F184-E660-AE26A3426D96</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="FD7366EC-0FBE-3DDC-9A21-126AD6D9C0A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48F3F5F2-068F-6BB5-B6AF-DD2E0678D4E1" name="Servicio__IDXv8">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CE97006B-BEFC-15F3-CCD2-13F8F64B7EFC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="832E4B79-B6A5-5F59-7F15-452A23AFCDD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B2AC1AD-D4AA-48E8-0CC5-91DB801D19C6" name="Servicios_Aseos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>BE890BBA-C1AE-FC63-C4D4-D397D51A6AC7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B3C60A2-905B-4695-2263-E3CE75BC4810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FEF8A35-B93C-F500-334C-A87A3696EB25" name="Servicios_Bares_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>210CC122-4859-D941-E155-0A7117F20F4E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3047EB46-FF10-BC2E-94C5-35BBF4C9B584"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9BCA43A-5A6A-8756-2DBA-450137E51F49" name="Servicios_Gimnasios_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>35B336CD-5D2A-0E07-1357-74131432BEB9</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD3CD721-2323-C739-3B86-18253B2E483B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6CF97BC-82C0-7178-F41E-D714C06C7B3A" name="Servicios_Internet_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>40436E12-4FC9-DEE1-67C4-6FC220E2C786</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7A1DA9A-C4BA-4DF8-0ADF-B7D5C8DC8693"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6149AA6-F484-D1F9-08EB-5E1A727C5528" name="Servicios_Piscinas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>8B3861C2-3A6C-667A-4EAF-F9D8179ACAA0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6C87D3F-1F17-6F20-B7A8-E540E22AD2CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B66532B7-C1CA-198E-3A58-9AAC68BEB244" name="Servicios_Prestamos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>D5A4B446-490B-28CE-2FA9-191859A3C729</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2A5F609-401D-1254-024F-462C18467A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C7FD4AC-3FE2-8832-6160-FF44B69703DD" name="Servicios_Salones_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>BB846EF3-33E1-BDFF-7477-792880341630</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4966A1A-E517-8FEB-4F7D-EACFCB95F00C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78D4FA27-02AA-6F4C-B073-198BDAD17E23" name="Servicios_Spa_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>C1A72448-20E5-F184-E660-AE26A3426D96</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD7366EC-0FBE-3DDC-9A21-126AD6D9C0A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B905CD2-86CF-2076-CA9D-0171F4818EBF" name="Servicios_Supermercados_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 03:54:10 UTC</createdTime>
+<generatorID>CE97006B-BEFC-15F3-CCD2-13F8F64B7EFC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="832E4B79-B6A5-5F59-7F15-452A23AFCDD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

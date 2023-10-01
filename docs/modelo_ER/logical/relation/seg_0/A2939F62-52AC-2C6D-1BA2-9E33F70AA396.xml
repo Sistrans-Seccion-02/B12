@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiene_recepcionistas" directorySegmentName="seg_0" id="A2939F62-52AC-2C6D-1BA2-9E33F70AA396">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-10-01 18:40:33 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>6BF2DBAF-B640-0976-40E1-6F7EFE4153D7</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0EB81E62-F3DF-A05F-E961-49A153B75C70</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

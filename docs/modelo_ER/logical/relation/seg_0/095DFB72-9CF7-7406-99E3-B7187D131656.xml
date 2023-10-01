@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tienen_prestamo" directorySegmentName="seg_0" id="095DFB72-9CF7-7406-99E3-B7187D131656">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-09-30 23:54:44 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>05A1AAF8-CEA6-8DE9-E3F1-46C3CC3DD1CC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5EE335C9-15C5-BE85-7114-976B25CA0055</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

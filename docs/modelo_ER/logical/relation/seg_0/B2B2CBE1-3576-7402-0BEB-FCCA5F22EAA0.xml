@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tienen_consumos_empleados" directorySegmentName="seg_0" id="B2B2CBE1-3576-7402-0BEB-FCCA5F22EAA0">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-09-30 23:51:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="77AB309F-5A13-E19F-730B-D1E2254237B3" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>301127C8-A594-83CC-6D98-690D2A34403E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ABF9F5D5-4D53-D97D-6DCB-048E561BF8A1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
