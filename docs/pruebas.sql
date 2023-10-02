@@ -4,7 +4,7 @@ INSERT INTO cadenas_hoteleras (id, nombre, hotel_id)
 VALUES
     (1, 'Cadena Hotelera Ejemplo', 1);
 
--- Inserción de la descripción del hotel
+-- Inserción de la tabla 'hotel'
 INSERT INTO hoteles (id, nombre, ciudad, pais, direccion, capacidad, estrellas, hotel_id, administrador_id, habitacion_id, servicio_id, recepcionista_recepcionista_id)
 VALUES
     ('H1', 'Hotel Ejemplo 1', 'Ciudad Ejemplo', 'País Ejemplo', 'Dirección Ejemplo 123', 100, 4, 1, 1, 1, 1, 5);
