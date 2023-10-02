@@ -1,4 +1,14 @@
 --RF1
+-- Inserción de una cadena hotelera
+INSERT INTO cadenas_hoteleras (id, nombre, hotel_id)
+VALUES
+    (1, 'Cadena Hotelera Ejemplo', 1);
+
+-- Inserción de la descripción del hotel
+INSERT INTO hoteles (id, nombre, ciudad, pais, direccion, capacidad, estrellas, hotel_id, administrador_id, habitacion_id, servicio_id, recepcionista_recepcionista_id)
+VALUES
+    ('H1', 'Hotel Ejemplo 1', 'Ciudad Ejemplo', 'País Ejemplo', 'Dirección Ejemplo 123', 100, 4, 1, 1, 1, 1, 5);
+
 -- Insertar usuarios en la tabla 'usuarios'
 INSERT INTO usuarios (nombre, email, tipo, administrador_id, cliente_id, empleado_id, gerente_id, recepcionista_id)
 VALUES
@@ -7,6 +17,7 @@ VALUES
     ('Usuario3', 'usuario3@email.com', 'Empleado', NULL, NULL, 3, NULL, NULL),
     ('Usuario4', 'usuario4@email.com', 'Gerente', NULL, NULL, NULL, 4, NULL),
     ('Usuario5', 'usuario5@email.com', 'Recepcionista', NULL, NULL, NULL, NULL, 5);
+
 --RF2
 -- Insertar administradores en la tabla 'administradores'
 INSERT INTO administradores (administrador_id)
