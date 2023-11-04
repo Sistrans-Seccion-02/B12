@@ -2,8 +2,8 @@
 
 ## Integrantes
 
-Julian David Bohorquez Beltran
-Santiago Rodriguez Mora
-Valeria Torres Gomez
+- Julian David Bohorquez Beltran
+- Santiago Rodriguez Mora
+- Valeria Torres Gomez
 
 # Proyecto
