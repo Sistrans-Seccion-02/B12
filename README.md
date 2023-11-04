@@ -1,6 +1,6 @@
-# B12
+# Proyecto - HOTEL DE LOS ANDES
 
-## Integrantes
+## Integrantes - Grupo B12
 
 - Julian David Bohorquez Beltran
 - Santiago Rodriguez Mora
@@ -16,5 +16,5 @@
 5. Clonar el proyecto
 `git clone https://github.com/Sistrans-Seccion-02/B6.git`
 
-### Lanzamiento del proyecti
+### Lanzamiento del proyecto
 1. Acceder a ProyectoApplication.java y ejecutar el proyecto
