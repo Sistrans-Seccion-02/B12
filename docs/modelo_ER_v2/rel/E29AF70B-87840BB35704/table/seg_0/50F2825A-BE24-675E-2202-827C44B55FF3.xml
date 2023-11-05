@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50F2825A-BE24-675E-2202-827C44B55FF3" name="Maquinas">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>09BB8763-1DD2-0850-F0F6-A13D4834215F</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Maquinas_ID" id="F6A3D968-D658-9FA8-DF53-420ACF757483">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="nombre" id="7BA8B0EA-6E14-3C7F-D5E8-B7E14B58310A">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>DD306794-8F1F-F45A-1E73-693ADCEAE7CA</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="1C962762-5237-EE9A-9F22-8C28AC74CF04">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>6486740E-C959-1CC5-068B-FF9E355C334F</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE5A32FE-05B0-F121-AABB-836F083EBF10" name="Maquinas_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F6A3D968-D658-9FA8-DF53-420ACF757483"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

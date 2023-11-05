@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="545700C9-4C15-B8AC-3AC1-E1D94793C805" name="h_plan">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:43:50 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Planes_Planes_consumo_ID" id="858DD9CD-9550-4144-3F71-4AB0BA2BCFE0">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:43:50 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76341693-2AF0-F5B4-07B1-1CE6A6E4ACA5" referredColumn="3FEEF8F9-51BD-A7CC-6DAE-FDA2938B29D7"/>
+</associations>
+</Column>
+<Column name="Hoteles_Hoteles_ID" id="1F8C87E8-B8D9-1870-265E-A94DC94952D1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:43:50 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A9ECF1F-295A-0A82-52C1-D08B50EB332C" referredColumn="4A2BFF01-411C-4257-1738-EAEF116EC579"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6F137B0-00A4-DE16-85BD-943014AC6A6A" name="h_plan_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:43:50 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="858DD9CD-9550-4144-3F71-4AB0BA2BCFE0"/>
+<colUsage columnID="1F8C87E8-B8D9-1870-265E-A94DC94952D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0192E9B5-C313-FA74-6504-E5A8BC92B23F" name="h_plan_Planes_consumo_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:43:50 UTC</createdTime>
+<generatorID>E6984483-AAAE-FB76-AFCE-A997A963CD9D</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="858DD9CD-9550-4144-3F71-4AB0BA2BCFE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFE937D1-83D4-B4C4-F662-6C0543D5AD06" name="h_plan_Hoteles_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:43:50 UTC</createdTime>
+<generatorID>E6984483-AAAE-FB76-AFCE-A997A963CD9D</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F8C87E8-B8D9-1870-265E-A94DC94952D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9940B81E-FBB0-5B8F-2C1A-A0542D3453E6" name="prod_super">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:35:33 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Productos_Productos_ID" id="F336676E-9A8B-D81C-01E7-C8E9DCE7A3CB">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:35:33 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="726039C9-3738-A87C-E0D6-230B2FB04054" referredColumn="FE051C78-5847-4574-4782-647184CF8E52"/>
+</associations>
+</Column>
+<Column name="Supermercados_Serv_Serv_ID" id="3AA486D5-5FA7-9D1F-3ABE-E43821702669">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:35:33 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8726506-E3F6-F3AE-78CA-064F469D342D" referredColumn="F1654164-45EE-28B4-DB55-7E32D5A6F195"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD314E9F-947E-E860-1DBF-C40A88EC6FE2" name="prod_super_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:35:33 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F336676E-9A8B-D81C-01E7-C8E9DCE7A3CB"/>
+<colUsage columnID="3AA486D5-5FA7-9D1F-3ABE-E43821702669"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="679FDACB-28B5-5CBD-F6B8-9DC6562A643F" name="prod_super_Productos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:35:33 UTC</createdTime>
+<generatorID>424D687F-434F-553E-371A-EBCE4486F481</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F336676E-9A8B-D81C-01E7-C8E9DCE7A3CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5968177-2327-DD1A-C72F-04340CAA4411" name="prod_super_Supermercados_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:35:33 UTC</createdTime>
+<generatorID>424D687F-434F-553E-371A-EBCE4486F481</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AA486D5-5FA7-9D1F-3ABE-E43821702669"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

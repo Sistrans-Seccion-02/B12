@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D00C7CE-3FE3-9BE0-4F9E-3036B6C83CA1" name="Gimnasios">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>29A9BEB0-D521-61E4-CC0B-FAFD6A71F197</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Servicios_Servicios_ID" id="3F42FF12-E910-903C-8E0F-70E9223D7312">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63B3FC4E-2C02-E9EA-7263-D5C8824773F0" referredColumn="0BA2E938-1CCB-64CB-B893-24533F42BBCA"/>
+</associations>
+</Column>
+<Column name="Maquinas_Maquinas_ID" id="E57F8CB6-C508-C25E-60C9-4B2A19819B55">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04FD989A-A46B-8C38-2B8A-0F6173221084" referredColumn="F6A3D968-D658-9FA8-DF53-420ACF757483"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="845F237A-52F8-3090-2025-77F9B775CEDE" name="Gimnasios_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="3F42FF12-E910-903C-8E0F-70E9223D7312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="564D5EE3-2C83-0CDF-6B1E-98DF647CB4F8" name="Gimnasios_Servicios_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>5D932034-597B-2764-AA4B-B6B2091CC0AA</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F42FF12-E910-903C-8E0F-70E9223D7312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C27E2F82-EC47-3FAA-2D35-6E862BE4C646" name="Gimnasios_Maquinas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>203F05ED-DB74-50B2-A469-91D8DEB4004E</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E57F8CB6-C508-C25E-60C9-4B2A19819B55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

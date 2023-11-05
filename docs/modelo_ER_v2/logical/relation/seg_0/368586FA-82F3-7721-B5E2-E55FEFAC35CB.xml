@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Reservas Planes consumo FK" directorySegmentName="seg_0" id="368586FA-82F3-7721-B5E2-E55FEFAC35CB">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:03:05 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F5ADD8FF-F456-3C54-82C6-FAEB0527D6A0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F9F331BF-FBB0-AB85-F403-DA15EE82BC3C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

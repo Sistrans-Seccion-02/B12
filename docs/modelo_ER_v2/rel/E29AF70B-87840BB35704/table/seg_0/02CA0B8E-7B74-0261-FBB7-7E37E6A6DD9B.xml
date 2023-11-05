@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02CA0B8E-7B74-0261-FBB7-7E37E6A6DD9B" name="Habitaciones">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>3DA79D51-992B-FCC2-D5DF-B145E48BE08F</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Habitaciones_ID" id="29700954-4AEC-FF48-F276-E306EAE36830">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="numero" id="9E591D7A-D3ED-CC4C-5C8F-261DE2B81E30">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>582CBE64-C6A0-DC5C-A7C5-E93190E4DAA8</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="C6014A76-6E91-B768-D44B-F724BD402874">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>B414F965-030F-8627-F376-64599E5F41C0</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo" id="5395BFDB-8B7B-F714-184A-C443BD99DF9A">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>06C642EC-790D-83D6-98A2-6CEC6E555921</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad" id="F3A00503-4D8E-BD6F-D359-8BCE2CAB0C90">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>B60DF818-EE72-E73A-B309-01F8D0127A15</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Servicios_Servicios_ID" id="49D65FFC-8826-D729-8468-5BFB22E5B040">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9A2258D-D94B-31D1-54FC-22C0A67632EA" referredColumn="0BA2E938-1CCB-64CB-B893-24533F42BBCA"/>
+</associations>
+</Column>
+<Column name="Hoteles_Hoteles_ID" id="649795E5-CD96-16FE-BCEF-BA4FFA807917">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FA33235-1F58-25C6-2555-532620B219E9" referredColumn="4A2BFF01-411C-4257-1738-EAEF116EC579"/>
+</associations>
+</Column>
+<Column name="Serv_hab_Serv_habitaciones_ID" id="CFD7A358-2A63-E775-7657-047132082EEA">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 18:53:21 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD806DFB-0B94-DA86-500E-C49F68876862" referredColumn="1440903B-5DFE-E33E-B72F-E428129AC82F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3E873E9-520B-5BD3-F8F9-8ECC1DCA71BC" name="Habitaciones_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="29700954-4AEC-FF48-F276-E306EAE36830"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B8E7C15-8E72-7153-34C8-B6823A41BCA7" name="Habitaciones__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4785F738-570A-3B83-868E-F7B0A9F5410C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="49D65FFC-8826-D729-8468-5BFB22E5B040"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7A6A56C-D63E-0849-57FD-B6D54BED61FF" name="Habitaciones__IDXv1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>564C552E-0143-DFFE-0F38-FA9936C69AA0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="649795E5-CD96-16FE-BCEF-BA4FFA807917"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC50BCFC-6D3C-2152-F04A-C3402939D75C" name="Habitaciones_Hoteles_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<generatorID>564C552E-0143-DFFE-0F38-FA9936C69AA0</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="649795E5-CD96-16FE-BCEF-BA4FFA807917"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9C1220D-5D98-5A8A-2DA5-79DC727E6FE4" name="Habi_Serv_habitaciones_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 18:53:21 UTC</createdTime>
+<generatorID>529258B0-B14A-D1C0-4E48-D45C23CBE5AB</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFD7A358-2A63-E775-7657-047132082EEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85C26CE6-46DD-B71F-C4A3-A798864E460C" name="Habitaciones_Servicios_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 18:53:21 UTC</createdTime>
+<generatorID>4785F738-570A-3B83-868E-F7B0A9F5410C</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49D65FFC-8826-D729-8468-5BFB22E5B040"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
