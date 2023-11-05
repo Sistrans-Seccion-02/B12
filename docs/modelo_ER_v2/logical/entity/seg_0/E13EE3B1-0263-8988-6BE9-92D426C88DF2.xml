@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E13EE3B1-0263-8988-6BE9-92D426C88DF2" name="Hoteles">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:24:11 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="C36D4B0E-66F2-D0FB-C00C-2F07FEBAE9CF">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:24:18 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="44DA5312-F406-1527-A0CC-A9573BAD1F6F">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:24:24 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ciudad" id="DC5F50D4-9605-CB5B-02A5-F26F9ABD1B00">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:24:36 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pais" id="AC71EBDE-EAF6-ED32-3381-B5F6AF2F2345">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:24:58 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="12E569A2-AB3E-F07D-B09C-84FD4B827575">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:25:10 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="capacidad" id="6F4CF018-0210-B009-EA65-8BDF31A385CD">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:25:21 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estrellas" id="8F216828-0B21-C226-ADB9-025CC924E51D">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 02:25:35 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

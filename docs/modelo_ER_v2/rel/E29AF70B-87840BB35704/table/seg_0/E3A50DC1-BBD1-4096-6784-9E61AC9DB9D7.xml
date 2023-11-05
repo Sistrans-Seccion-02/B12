@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3A50DC1-BBD1-4096-6784-9E61AC9DB9D7" name="hab_tiene_serv_hab">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Habitaciones_ID" id="9E479A7B-5CFB-3992-3E1F-D5CED1C13841">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+<associations>
+<colAssociation fkAssociation="8F5296EA-5D09-6499-C64F-4D8EBD83071A" referredColumn="29700954-4AEC-FF48-F276-E306EAE36830"/>
+</associations>
+</Column>
+<Column name="Servicios_habitaciones_ID" id="D1F7A050-C3A3-AF7D-0F81-D5A1B4BA6507">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B19C443-4384-21AE-5CB5-45579F50EA68" referredColumn="1440903B-5DFE-E33E-B72F-E428129AC82F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0E75C50-F8C1-5DAF-7BDF-5AC4F1CF5440" name="hab_tiene_serv_hab_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E479A7B-5CFB-3992-3E1F-D5CED1C13841"/>
+<colUsage columnID="D1F7A050-C3A3-AF7D-0F81-D5A1B4BA6507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A94052EE-13F1-B16B-AA03-760A3374771E" name="hab_serv_Habitaciones_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>C23623A0-1057-DFFA-ADE7-2EB90C848A10</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E479A7B-5CFB-3992-3E1F-D5CED1C13841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="946DD06A-E7BB-DE39-93A2-0AAC1463D09F" name="tiene_serv_habitaciones_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>C23623A0-1057-DFFA-ADE7-2EB90C848A10</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1F7A050-C3A3-AF7D-0F81-D5A1B4BA6507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

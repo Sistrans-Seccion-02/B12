@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5A43F04-902E-2878-D423-8415E26C2167" name="Prestamos">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>B3886FC9-5D97-44F0-316C-95D6CECCAF60</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Servicios_Servicios_ID" id="7DF2086B-8279-FED7-A45D-A8B6BCE3A5EB">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46379B58-16C4-91D2-9819-52A50FF44E8B" referredColumn="0BA2E938-1CCB-64CB-B893-24533F42BBCA"/>
+</associations>
+</Column>
+<Column name="valor" id="D798A13C-B51E-A84E-E5BE-38368BDF6306">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>2205D8DB-6710-DBAE-2FFA-5B378912B203</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="objeto" id="0F11C610-E88B-DD5A-F5FE-E09F788564C3">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>04451ADA-639D-E2CD-A887-D25A83A26E9E</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBAD84EE-39C1-62D0-08CA-F49544F55CAC" name="Prestamos_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7DF2086B-8279-FED7-A45D-A8B6BCE3A5EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="179181AF-75F1-D55A-2FA2-BCCB9AAD6094" name="Prestamos_Servicios_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>C921216F-7C0B-C324-B8BB-5A61C433C3E2</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DF2086B-8279-FED7-A45D-A8B6BCE3A5EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

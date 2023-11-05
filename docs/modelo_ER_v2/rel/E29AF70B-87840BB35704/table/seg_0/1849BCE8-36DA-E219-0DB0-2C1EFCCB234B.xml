@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1849BCE8-36DA-E219-0DB0-2C1EFCCB234B" name="Productos">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>2D0CBF11-3066-9031-E7D5-F97E5682201A</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Productos_ID" id="FE051C78-5847-4574-4782-647184CF8E52">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="nombre" id="9F86FB85-71CF-6D29-9459-4BED7BEF04CA">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>759ACFBB-FDB6-FBE0-58ED-300576084B15</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo" id="BFD2F939-613C-A59D-2C78-3F670963A5FC">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>FB5B9326-1380-F3D3-349B-E27928385BBE</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bares_Servicios_Servicios_ID" id="0010B32D-931D-E271-7BF9-E9B2CC156B6F">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CB58EFC-AEAA-7E6D-0FE0-A228D7EFF1D0" referredColumn="2982CAAD-8DD1-9978-52E4-CD30D09A048A"/>
+</associations>
+</Column>
+<Column name="Bares_Bares_ID" id="86D792A0-5C3D-D3A4-8F65-8D0372A549B1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CB58EFC-AEAA-7E6D-0FE0-A228D7EFF1D0" referredColumn="F63FFC84-EDF2-0A49-D0F9-483DD3FF68C9"/>
+</associations>
+</Column>
+<Column name="Consumo_Consumo_ID" id="74D74D5D-3CEA-C146-C791-152186254438">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAD800FB-3100-E7EA-C7D1-393F1EBC1E0A" referredColumn="87C76CFC-A05D-9D4B-DC46-75A434F404F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="60FE5869-492C-22B3-5895-4D9D7358EFF7" name="Productos_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FE051C78-5847-4574-4782-647184CF8E52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB09A7D8-8811-EC32-7041-EE456CBA3DC7" name="Productos__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0420EE4B-8945-6190-FB8A-21DF1A43F97A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0010B32D-931D-E271-7BF9-E9B2CC156B6F"/>
+<colUsage columnID="86D792A0-5C3D-D3A4-8F65-8D0372A549B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="018242C6-2879-9F26-898A-F5645AB8AD7D" name="Productos__IDXv1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EFD4A248-EF2D-EFA4-5CAA-3131E2ED3C06</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="74D74D5D-3CEA-C146-C791-152186254438"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C71E41E9-D621-4F60-30AA-59E2A70E84C2" name="Productos_Bares_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<generatorID>0420EE4B-8945-6190-FB8A-21DF1A43F97A</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0010B32D-931D-E271-7BF9-E9B2CC156B6F"/>
+<colUsage columnID="86D792A0-5C3D-D3A4-8F65-8D0372A549B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8CDBAFF-6856-5A7D-12FB-9441AF38A8A9" name="Productos_Consumo_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<generatorID>EFD4A248-EF2D-EFA4-5CAA-3131E2ED3C06</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74D74D5D-3CEA-C146-C791-152186254438"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

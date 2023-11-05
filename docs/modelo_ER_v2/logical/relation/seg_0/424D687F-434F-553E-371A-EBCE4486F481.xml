@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="prod_super" directorySegmentName="seg_0" id="424D687F-434F-553E-371A-EBCE4486F481">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:34:43 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2D0CBF11-3066-9031-E7D5-F97E5682201A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E603818-09E3-3A62-1BC5-5D4DEA39D412</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

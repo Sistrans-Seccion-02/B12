@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="servicio_tiene_descuento" directorySegmentName="seg_0" id="39EBEFEE-7C3A-F3DF-7CEB-3597D6FAC80F">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:20:20 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>35CA86EA-88E5-21EA-D32A-04CEA4C2A396</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F0F9352C-F49B-4E15-CC33-8DB0C701FB79</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

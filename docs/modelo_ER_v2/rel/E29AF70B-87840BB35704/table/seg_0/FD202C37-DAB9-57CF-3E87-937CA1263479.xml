@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD202C37-DAB9-57CF-3E87-937CA1263479" name="Descuentos">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>35CA86EA-88E5-21EA-D32A-04CEA4C2A396</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="porcentaje" id="D9B63EFE-AFF7-F570-9015-E1C2439017AE">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:48:59 UTC</createdTime>
+<generatorID>11F345D3-97EC-DD8D-EE25-4C2E2F1D52CB</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descuentos_ID" id="26E3AC31-057E-AA9E-B1FC-62F8CAED47F2">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Consumo_Consumo_ID" id="87B05309-A4DF-72EB-58E6-BE9B8ECBDB05">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12630489-7C10-22B4-0F80-4E3D7F7DE854" referredColumn="87C76CFC-A05D-9D4B-DC46-75A434F404F5"/>
+</associations>
+</Column>
+<Column name="Planes_consumo_ID" id="04C898EC-6902-0DA5-7CBA-41F8142EAAAD">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2ABB55EC-EF90-0C19-17D9-3FDD22F24A91" referredColumn="3FEEF8F9-51BD-A7CC-6DAE-FDA2938B29D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0748043D-3D5E-40AD-86D6-BA861ECC6466" name="Descuentos_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="26E3AC31-057E-AA9E-B1FC-62F8CAED47F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0527E070-24BE-B787-527B-5E677C2CCACC" name="Descuentos__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8D983EED-9765-9C40-9126-5CD71825348E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="87B05309-A4DF-72EB-58E6-BE9B8ECBDB05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="499817DA-600C-717F-A6BC-F217D9C29DA3" name="Descuentos__IDXv1">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>27785C25-07F4-8405-312E-E989D4777FD2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="04C898EC-6902-0DA5-7CBA-41F8142EAAAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F4114F7-02CF-2B2B-1024-44E9AAA5B289" name="Descuentos_Consumo_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<generatorID>8D983EED-9765-9C40-9126-5CD71825348E</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87B05309-A4DF-72EB-58E6-BE9B8ECBDB05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C344CB3F-5926-11CC-FB95-CA86AF933575" name="Descuentos_Planes_consumo_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<generatorID>27785C25-07F4-8405-312E-E989D4777FD2</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04C898EC-6902-0DA5-7CBA-41F8142EAAAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

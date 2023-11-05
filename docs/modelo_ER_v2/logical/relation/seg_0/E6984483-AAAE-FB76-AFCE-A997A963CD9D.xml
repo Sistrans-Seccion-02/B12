@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="h_plan" directorySegmentName="seg_0" id="E6984483-AAAE-FB76-AFCE-A997A963CD9D">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:38:10 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F5ADD8FF-F456-3C54-82C6-FAEB0527D6A0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E13EE3B1-0263-8988-6BE9-92D426C88DF2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

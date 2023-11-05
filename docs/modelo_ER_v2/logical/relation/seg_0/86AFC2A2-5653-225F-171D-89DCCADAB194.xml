@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Consumo Cuentas FK" directorySegmentName="seg_0" id="86AFC2A2-5653-225F-171D-89DCCADAB194">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:31:21 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E93169BD-0875-4B95-F11E-3ED0DA8D5FB7</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B0290BB0-E759-8D89-CD53-D1557CA764AD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

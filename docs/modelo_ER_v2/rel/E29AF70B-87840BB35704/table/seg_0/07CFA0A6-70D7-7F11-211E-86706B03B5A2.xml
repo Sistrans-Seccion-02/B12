@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07CFA0A6-70D7-7F11-211E-86706B03B5A2" name="Clientes">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>3F66CB30-EF6F-021B-8489-14880BFF18F4</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Clientes_ID" id="662B86B3-6E0E-B4D3-6D77-ABC08B93AF3C">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="Usuarios_Usuarios_ID" id="87AC2A73-0A4F-50C6-3E8C-F6F25EEBAFE5">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A474806-65AF-D5BA-3921-47FEFDE5A9A6" referredColumn="94ECFCDF-2834-AEBB-7630-FE0E84B33660"/>
+</associations>
+</Column>
+<Column name="Cuentas_Cuentas_ID" id="EBA36740-B38F-4A96-FA4F-67A70DEC8122">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F307D915-344E-BAD0-1A64-871819A17625" referredColumn="9D2E8C15-04C0-7209-54AC-82E2D495E2F6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="972D0CF6-E105-AD85-82B8-E361E51A5820" name="Clientes_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="87AC2A73-0A4F-50C6-3E8C-F6F25EEBAFE5"/>
+<colUsage columnID="662B86B3-6E0E-B4D3-6D77-ABC08B93AF3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="049F9FA4-42ED-9888-A66A-96511E1201A6" name="Clientes__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:54 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>480A7BBF-E11C-20F9-31FA-555C3547C92A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EBA36740-B38F-4A96-FA4F-67A70DEC8122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FE9FB13-4067-BB9C-46C3-5D66E613E32C" name="Clientes_Usuarios_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>4CF14167-D133-60D1-A238-053FC4E19556</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87AC2A73-0A4F-50C6-3E8C-F6F25EEBAFE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2089A042-7FAB-0AC6-0482-0DAF678BA6E0" name="Clientes_Cuentas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 18:53:21 UTC</createdTime>
+<generatorID>480A7BBF-E11C-20F9-31FA-555C3547C92A</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBA36740-B38F-4A96-FA4F-67A70DEC8122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

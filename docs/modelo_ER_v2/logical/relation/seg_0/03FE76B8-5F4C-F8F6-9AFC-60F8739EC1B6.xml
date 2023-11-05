@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cuentas Habitaciones FK" directorySegmentName="seg_0" id="03FE76B8-5F4C-F8F6-9AFC-60F8739EC1B6">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 04:40:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3DA79D51-992B-FCC2-D5DF-B145E48BE08F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E93169BD-0875-4B95-F11E-3ED0DA8D5FB7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

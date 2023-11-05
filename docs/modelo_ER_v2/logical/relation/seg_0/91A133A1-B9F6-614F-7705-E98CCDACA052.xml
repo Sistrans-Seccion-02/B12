@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Habitaciones Reservas FK" directorySegmentName="seg_0" id="91A133A1-B9F6-614F-7705-E98CCDACA052">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:23:37 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3DA79D51-992B-FCC2-D5DF-B145E48BE08F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F9F331BF-FBB0-AB85-F403-DA15EE82BC3C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

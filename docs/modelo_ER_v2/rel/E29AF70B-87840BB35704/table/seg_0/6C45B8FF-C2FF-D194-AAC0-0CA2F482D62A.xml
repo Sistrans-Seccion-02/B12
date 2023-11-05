@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C45B8FF-C2FF-D194-AAC0-0CA2F482D62A" name="Servicios_spa">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>BF24EE1E-EAAE-C07F-3B35-3B372F385FE1</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Productos_Productos_ID" id="2CD5A087-D3F3-CD41-B1E4-0B4F92E70292">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF85481F-BF83-049C-15BA-EA5D99F3AE2F" referredColumn="FE051C78-5847-4574-4782-647184CF8E52"/>
+</associations>
+</Column>
+<Column name="duracion" id="AF696F1D-CAB2-B26E-1CFF-3B4C8F65B915">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>36BCBAC6-E6C9-8A21-9220-0263D56271AB</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Spas_Servicios_ID" id="668E4462-4B3F-6FE8-742D-80751C21584E">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BBD663C-61AC-8092-7AC9-07250AC90417" referredColumn="057F3E34-0E00-7C6F-187C-5E02F3FD2106"/>
+</associations>
+</Column>
+<Column name="Spas_Spas_ID" id="E16AEFB4-CB37-4022-4EB8-F5065DAC2D0B">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BBD663C-61AC-8092-7AC9-07250AC90417" referredColumn="9FFE16F1-E93C-E9C1-1802-618030A3DEA9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC9F2DC1-BED9-EA66-B5A9-E54DA79E850F" name="Servicios_spa_PK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2CD5A087-D3F3-CD41-B1E4-0B4F92E70292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F5D1231-4F70-CABF-C279-7E5169C3D43A" name="Servicios_spa__IDX">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>329FA664-A5E9-280A-B94D-55360FF1F9A9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="668E4462-4B3F-6FE8-742D-80751C21584E"/>
+<colUsage columnID="E16AEFB4-CB37-4022-4EB8-F5065DAC2D0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C642610D-A2CB-CD06-5730-106EC353BABE" name="Servicios_spa_Productos_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:49:00 UTC</createdTime>
+<generatorID>FEF5D18E-C674-0843-0E7A-A89512E57B57</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CD5A087-D3F3-CD41-B1E4-0B4F92E70292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5471D43B-721E-FFC9-5A7F-631489B8F124" name="Servicios_spa_Spas_FK">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 05:00:55 UTC</createdTime>
+<generatorID>329FA664-A5E9-280A-B94D-55360FF1F9A9</generatorID>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="668E4462-4B3F-6FE8-742D-80751C21584E"/>
+<colUsage columnID="E16AEFB4-CB37-4022-4EB8-F5065DAC2D0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

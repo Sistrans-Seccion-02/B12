@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Bares Productos FK" directorySegmentName="seg_0" id="0420EE4B-8945-6190-FB8A-21DF1A43F97A">
+<createdBy>valeriatorresgomez</createdBy>
+<createdTime>2023-11-05 03:17:34 UTC</createdTime>
+<ownerDesignName>modelo_ER_v2</ownerDesignName>
+<engineerTo>
+<item key="E29AF70B-2A0E-DCDD-BD74-87840BB35704" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DE18C59F-F124-103C-C260-EA00B2A5D3EC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>2D0CBF11-3066-9031-E7D5-F97E5682201A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
