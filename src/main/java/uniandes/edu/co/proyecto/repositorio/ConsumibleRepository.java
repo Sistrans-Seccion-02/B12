@@ -15,7 +15,6 @@ public interface ConsumibleRepository extends JpaRepository<Consumible, Integer>
     @Query (value = "SELECT * FROM consumibles", nativeQuery = true)
     Collection<Consumible> darConsumibles();
 
-
     @Query (value = "SELECT * FROM consumibles WHERE id = :id", nativeQuery = true)
     Consumible darConsumible(@Param("id") int id);
 

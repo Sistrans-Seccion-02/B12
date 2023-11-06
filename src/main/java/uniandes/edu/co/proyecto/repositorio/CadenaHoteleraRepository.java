@@ -15,7 +15,6 @@ public interface CadenaHoteleraRepository extends JpaRepository<CadenaHoteleras,
     @Query (value = "SELECT * FROM cadenasHoteleras", nativeQuery = true)
     Collection<CadenaHoteleras> darCadenasHoteleras();
 
-
     @Query (value = "SELECT * FROM cadenasHoteleras WHERE id = :id", nativeQuery = true)
     CadenaHoteleras darCadenaHotelera(@Param("id") int id);
 

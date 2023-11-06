@@ -1,16 +1,11 @@
 package uniandes.edu.co.proyecto.modelo;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="servicios_habitacion")
 
 public class ServicioHabitacion {
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String tipo_servicio;
     private Boolean contratado;
