@@ -9,10 +9,10 @@
 # Proyecto
 
 ### Instalacion del proyecto
-1. Instalar Oracle 12c en adelante
-2. Instalar SpringBoot 2.0 en adelante
-3. Instale Java 8 en adelante
-4. Instale Maven 3.0
+1. Instalación Oracle 12c en adelante
+2. Instalación SpringBoot 2.0 en adelante
+3. Instalación Java 8 en adelante
+4. Instalación Maven 3.0
 5. Clonar el proyecto
 `git clone https://github.com/Sistrans-Seccion-02/B6.git`
 
