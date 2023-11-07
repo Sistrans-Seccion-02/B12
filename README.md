@@ -18,3 +18,4 @@
 
 ### Lanzamiento del proyecto
 1. Acceder a ProyectoApplication.java y ejecutar el proyecto
+2. Acceder al localhost `http://localhost:8080/hotel/`
