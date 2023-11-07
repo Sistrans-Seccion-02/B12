@@ -1,0 +1,1 @@
+insert into INTERNET (id_servicio, capacidad, costo) values (14, 10000, 10);
