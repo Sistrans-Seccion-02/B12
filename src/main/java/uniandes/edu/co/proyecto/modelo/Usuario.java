@@ -25,12 +25,12 @@ public class Usuario {
     @JoinColumn(name = "tiposusuario_nombre", referencedColumnName = "nombre")
     private TipoUsuario tipoUsuario;
 
-    @OneToOne
-    @JoinColumn(name = "planesconsumo_nombre", referencedColumnName = "nombre")
-    private PlanConsumo planConsumo;
+    // @OneToOne
+    // @JoinColumn(name = "planesconsumo_nombre", referencedColumnName = "nombre")
+    // private PlanConsumo planConsumo;
 
 
-    public Usuario(Integer numero_documento, TipoUsuario tiposusuario_nombre, PlanConsumo planesconsumo_nombre, String email, String tipo_documento, String nombre, Date fecha_entrada, Date fecha_salida)
+    public Usuario(Integer numero_documento, TipoUsuario tiposusuario_nombre, String email, String tipo_documento, String nombre, Date fecha_entrada, Date fecha_salida)
     {
         this.numero_documento = numero_documento;
         this.tipo_documento = tipo_documento;
@@ -39,7 +39,7 @@ public class Usuario {
         this.fecha_entrada = fecha_entrada;
         this.fecha_salida = fecha_salida;
         this.tipoUsuario = tiposusuario_nombre;
-        this.planConsumo = planesconsumo_nombre;
+        // this.planConsumo = planesconsumo_nombre;
     }
 
     public Usuario()
@@ -61,13 +61,13 @@ public class Usuario {
         this.tipoUsuario = tiposusuario_nombre;
     }
 
-    public PlanConsumo getPlanConsumo() {
-        return planConsumo;
-    }
+    // public PlanConsumo getPlanConsumo() {
+    //     return planConsumo;
+    // }
 
-    public void setPlanConsumo(PlanConsumo planesconsumo_nombre) {
-        this.planConsumo = planesconsumo_nombre;
-    }
+    // public void setPlanConsumo(PlanConsumo planesconsumo_nombre) {
+    //     this.planConsumo = planesconsumo_nombre;
+    // }
 
     public String getEmail() {
         return email;

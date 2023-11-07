@@ -27,7 +27,6 @@
                     <th scope="col">Correo electrónico</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Tipo de Usuario</th>
-                    <th scope="col">Plan de Consumo</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                 </tr>
@@ -39,7 +38,7 @@
                         <td th:text="${usuario.email}"></td>
                         <td th:text="${usuario.nombre}"></td>
                         <td th:text="${usuario.tipoUsuario.nombre}"></td>
-                        <td th:text="${usuario.planConsumo.nombre}"></td>
+                        <!--<td th:text="${usuario.planConsumo.nombre}"></td>-->
                         <td><a th:href="@{'usuarios/' + ${usuario.numero_documento} + '/edit'}">Modificar</a></td>
                         <td><a th:href="@{'usuarios/' + ${usuario.numero_documento} + '/delete'}">Eliminar</a></td>
                     </tr>
