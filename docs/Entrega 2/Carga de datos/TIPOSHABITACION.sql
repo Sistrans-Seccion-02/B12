@@ -1,0 +1,15 @@
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('suite presidencial', 2, 801);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('suite', 6, 129);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('sencilla', 1, 1594);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('doble', 3, 1583);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación estándar', 2, 449);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación ejecutiva', 4, 226);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación familiar', 5, 549);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación con vista al mar', 7, 1608);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación con balcón', 1, 598);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación de lujo', 4, 890);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación temática', 3, 1769);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación con jacuzzi', 4, 1426);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación con chimenea', 5, 1224);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación con terraza', 4, 1396);
+insert into TIPOSHABITACION (nombre, capacidad, costo) values ('habitación con piscina privada', 3, 975);
