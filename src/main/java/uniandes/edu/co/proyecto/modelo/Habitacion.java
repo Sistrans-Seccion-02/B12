@@ -1,26 +1,30 @@
 package uniandes.edu.co.proyecto.modelo;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="habitaciones")
-
-
 public class Habitacion {
+    @Id//EmbeddedId si fuera llave compuesta, y se crea la clase etc.
     private Integer numero;
-    private String tipo;
-    private Integer costo;
-    private Integer capacidad;
 
-    public Habitacion(){;}
+    @OneToOne
+    @JoinColumn(name = "tiposhabitacion_nombre", referencedColumnName = "nombre")
+    private TipoHabitacion tipoHabitacion;
 
-    public Habitacion(Integer numero, String tipo, Integer costo, Integer capacidad)
+
+    public Habitacion(Integer numero, TipoHabitacion tipo)
     {
         this.numero = numero;
-        this.tipo = tipo;
-        this.costo = costo;
-        this.capacidad = capacidad;
+        this.tipoHabitacion = tipo;
     }
+
+    public Habitacion()
+    {;}
 
     public Integer getNumero() {
         return numero;
@@ -30,34 +34,16 @@ public class Habitacion {
         this.numero = numero;
     }
 
-    public String getTipo() {
-        return tipo;
+    public TipoHabitacion getTipoHabitacion() {
+        return tipoHabitacion;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setTipoHabitacion(TipoHabitacion tipoHabitacion) {
+        this.tipoHabitacion = tipoHabitacion;
     }
 
-    public Integer getCosto() {
-        return costo;
-    }
+    
 
-    public void setCosto(Integer costo) {
-        this.costo = costo;
-    }
 
-    public Integer getCapacidad() {
-        return capacidad;
-    }
-
-    public void setCapacidad(Integer capacidad) {
-        this.capacidad = capacidad;
-    }
-
-    @Override
-    public String toString()
-    {
-        return this.numero+"|"+this.tipo+"|"+this.costo+"|"+this.capacidad;
-    }
     
 }

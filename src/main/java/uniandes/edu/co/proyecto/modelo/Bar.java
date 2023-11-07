@@ -1,32 +1,46 @@
+/* 
+
 package uniandes.edu.co.proyecto.modelo;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="bares")
 
 public class Bar {
+
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
+    @OneToOne
+    @JoinColumn(name = "id_servicio", referencedColumnName = "id")
+    private Servicio id_servicio;
+
+    private Integer capacidad;
     private String estilo;
 
-    public Bar(){;}
 
-    public Bar(String estilo)
-    {
+    public Bar(Servicio id_servicio, Integer capacidad, String estilo) {
+        this.id_servicio = id_servicio;
+        this.capacidad = capacidad;
         this.estilo = estilo;
     }
 
-    public Integer getId() {
-        return id;
+    public Bar() 
+    {;}
+
+    public Servicio getId_servicio() {
+        return id_servicio;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId_servicio(Servicio id_servicio) {
+        this.id_servicio = id_servicio;
+    }
+
+    public Integer getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(Integer capacidad) {
+        this.capacidad = capacidad;
     }
 
     public String getEstilo() {
@@ -36,5 +50,8 @@ public class Bar {
     public void setEstilo(String estilo) {
         this.estilo = estilo;
     }
-    
+
+      
 }
+
+*/

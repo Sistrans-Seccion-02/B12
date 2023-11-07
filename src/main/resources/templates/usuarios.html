@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios | Hotel de los Andes</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <style>
+        .custom-table {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://wallpapercave.com/wp/wp2978951.jpg'); text-align: center;">
+    <div class="container">
+        <div><p style="text-align: center; font-family: sans-serif; font-size: 40px;  font-weight: bold;">Lista de usuarios</p></div>
+        <div style="display: flex; margin-bottom: 20px;">
+            <div><a th:href="@{/}" class="btn btn-primary">Volver a la pestaña anterior</a></div>
+            <div style="margin-left: 685px;"><a th:href="@{usuarios/new}" class="btn btn-primary">Añadir un nuevo usuario</a></div>
+        </div>
+        <table class="table custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Tipo Documento</th>
+                    <th scope="col">Correo electrónico</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo de Usuario</th>
+                    <th scope="col">Plan de Consumo</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <th:block th:each="usuario:${usuarios}">
+                    <tr>
+                        <td th:text="${usuario.numero_documento}"></td>
+                        <td th:text="${usuario.email}"></td>
+                        <td th:text="${usuario.nombre}"></td>
+                        <td th:text="${usuario.tipoUsuario.nombre}"></td>
+                        <td th:text="${usuario.planConsumo.nombre}"></td>
+                        <td><a th:href="@{'usuarios/' + ${usuario.numero_documento} + '/edit'}">Modificar</a></td>
+                        <td><a th:href="@{'usuarios/' + ${usuario.numero_documento} + '/delete'}">Eliminar</a></td>
+                    </tr>
+                </th:block>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+

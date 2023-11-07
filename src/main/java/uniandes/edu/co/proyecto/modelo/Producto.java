@@ -1,29 +1,53 @@
+/* 
+
 package uniandes.edu.co.proyecto.modelo;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="productos")
 
 public class Producto {
-    private Integer id;
+
+    @Id
+    private Integer codigo;
+
     private String nombre;
-    private Integer costo;
+    private Integer precio;
 
-    public Producto(){;}
+    @ManyToOne
+    @JoinColumn(name = "id_bar", referencedColumnName = "id_servicio")
+    private Bar idBar;
 
-    public Producto(String nombre, Integer costo)
-    {
+    @ManyToOne
+    @JoinColumn(name = "id_restaurante", referencedColumnName = "id_servicio")
+    private Restaurante idRestaurante;
+
+    @ManyToOne
+    @JoinColumn(name = "id_supermercado", referencedColumnName = "id_servicio")
+    private Supermercado idSupermercado;
+
+    @ManyToOne
+    @JoinColumn(name = "id_tienda", referencedColumnName = "id_servicio")
+    private Tienda idTienda;
+
+    public Producto(Integer codigo, String nombre, Integer precio, Bar idBar, Restaurante idRestaurante,
+            Supermercado idSupermercado, Tienda idTienda) {
+        this.codigo = codigo;
         this.nombre = nombre;
-        this.costo = costo;
+        this.precio = precio;
+        this.idBar = idBar;
+        this.idRestaurante = idRestaurante;
+        this.idSupermercado = idSupermercado;
+        this.idTienda = idTienda;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getCodigo() {
+        return codigo;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
     }
 
     public String getNombre() {
@@ -34,19 +58,53 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public Integer getCosto() {
-        return costo;
+    public Integer getPrecio() {
+        return precio;
     }
 
-    public void setCosto(Integer costo) {
-        this.costo = costo;
+    public void setPrecio(Integer precio) {
+        this.precio = precio;
     }
 
-    @Override
-    public String toString()
-    {
-        return this.nombre+"|"+this.costo;
+    public Bar getIdBar() {
+        return idBar;
+    }
+
+    public void setIdBar(Bar idBar) {
+        this.idBar = idBar;
+    }
+
+    public Restaurante getIdRestaurante() {
+        return idRestaurante;
+    }
+
+    public void setIdRestaurante(Restaurante idRestaurante) {
+        this.idRestaurante = idRestaurante;
+    }
+
+    public Supermercado getIdSupermercado() {
+        return idSupermercado;
+    }
+
+    public void setIdSupermercado(Supermercado idSupermercado) {
+        this.idSupermercado = idSupermercado;
+    }
+
+    public Tienda getIdTienda() {
+        return idTienda;
+    }
+
+    public void setIdTienda(Tienda idTienda) {
+        this.idTienda = idTienda;
     }
 
     
+
+    
+
+
+    
 }
+
+
+*/

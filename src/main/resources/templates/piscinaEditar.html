@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar piscina</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+    <form th:action="@{'/piscinas/'+${id_servicio}+'/edit/save'}" th:object th:object="${piscina}"
+    method="post">
+    <div th:replace="~{fragments/piscinaForm :: piscinaForm(titulo='Editar piscina', piscina=${piscina})}">
+        
+    </div>
+</form>
+    
+</body>
+</html>

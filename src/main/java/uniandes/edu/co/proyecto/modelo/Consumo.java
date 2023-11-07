@@ -1,52 +1,73 @@
 package uniandes.edu.co.proyecto.modelo;
+
+import java.sql.Date;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="Consumos")
-
-
+@Table(name="consumos")
 public class Consumo {
-    private Integer id;
-    private String Consumo;
-    private Integer valor;
+    @Id
+    private Integer numero_factura;
+    private Integer costo;
+    private Date fecha;
+    @ManyToOne
+    @JoinColumn(name = "habitaciones_numero", referencedColumnName = "numero")
+    private Habitacion habitacion;
+    //TODO toca hacer que referencia a la factura
+    //private --- facturas_numero;
 
-    public Consumo(){;}
+    public Consumo()
+    {;}
 
-    public Consumo(String Consumo, Integer valor)
+    public Consumo(Integer numero_factura, Integer costo, Date fecha, Habitacion habitacion)
     {
-        this.Consumo = Consumo;
-        this.valor = valor;
+        this.numero_factura = numero_factura;
+        this.costo = costo;
+        this.fecha = fecha;
+        this.habitacion = habitacion;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getNumero_factura() {
+        return numero_factura;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setNumero_factura(Integer numero_factura) {
+        this.numero_factura = numero_factura;
     }
 
-    public String getConsumo() {
-        return Consumo;
+    public Integer getCosto() {
+        return costo;
     }
 
-    public void setConsumo(String Consumo) {
-        this.Consumo = Consumo;
+    public void setCosto(Integer costo) {
+        this.costo = costo;
     }
 
-    public Integer getValor() {
-        return valor;
+    public Date getFecha() {
+        return fecha;
     }
 
-    public void setValor(Integer valor) {
-        this.valor = valor;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 
-    @Override
-    public String toString()
-    {
-        return this.Consumo+"|"+this.valor;
+    public Habitacion getHabitacion() {
+        return habitacion;
     }
+
+    public void setHabitacion(Habitacion habitacion) {
+        this.habitacion = habitacion;
+    }
+    
+
+
+
+
+
     
 }

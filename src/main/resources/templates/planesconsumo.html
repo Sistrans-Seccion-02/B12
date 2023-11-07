@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de consumo | Hotel de los Andes</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <style>
+        .custom-table {
+            background-color: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://wallpapercave.com/wp/wp2978951.jpg'); text-align: center;">
+    <div class="container">
+        <div><p style="text-align: center; font-family: sans-serif; font-size: 40px;  font-weight: bold; margin-bottom: 50px;">Planes de consumo</p></div>
+        <div style="display: flex; margin-bottom: 20px;">
+            <div><a th:href="@{/}" class="btn btn-primary">Volver a la pestaña anterior</a></div>
+            <div style="margin-left: 780px;"><a th:href="@{planesconsumo/new}" class="btn btn-primary">Nuevo plan</a></div>
+        </div>
+        <table class="table custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <th:block th:each="planconsumo:${planesconsumo}">
+                    <tr>
+                        <td th:text="${planconsumo.nombre}"></td>
+                        <td th:text="${planconsumo.descripcion}"></td>
+                        <td><a th:href="@{'planesconsumo/' + ${planconsumo.nombre} + '/edit'}">Modificar</a></td>
+                        <td><a th:href="@{'planesconsumo/' + ${planconsumo.nombre} + '/delete'}">Eliminar</a></td>
+                    </tr>
+                </th:block>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

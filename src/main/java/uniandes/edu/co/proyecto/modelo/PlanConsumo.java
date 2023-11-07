@@ -1,61 +1,46 @@
 package uniandes.edu.co.proyecto.modelo;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="planes")
-
-public class PlanConsumo {
-    private Integer id;
+@Table(name="planesconsumo")
+public  class PlanConsumo {
+    @Id
     private String nombre;
-    private Integer noches;
-    private Integer costo;
+    private String descripcion;
 
-    public PlanConsumo(){;}
-
-    public PlanConsumo(String nombre, Integer noches, Integer costo)
+    public PlanConsumo(String nombre, String descripcion)
     {
         this.nombre = nombre;
-        this.noches = noches;
-        this.costo = costo;
+        this.descripcion = descripcion;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    public PlanConsumo()
+    {;}
 
     public String getNombre() {
         return nombre;
     }
 
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public Integer getNoches() {
-        return noches;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public void setNoches(Integer noches) {
-        this.noches = noches;
+
     }
 
-    public Integer getCosto() {
-        return costo;
-    }
-
-    public void setCosto(Integer costo) {
-        this.costo = costo;
-    }
-
-    @Override
-    public String toString()
-    {
-        return this.nombre+"|"+this.noches+"|"+this.costo;
-    }
+ 
     
-}
+
+    

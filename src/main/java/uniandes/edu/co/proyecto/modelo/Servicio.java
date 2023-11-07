@@ -1,51 +1,56 @@
 package uniandes.edu.co.proyecto.modelo;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="servicios")
 
 public class Servicio {
-    private Integer id;
+
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Integer id_servicio;
+
+
+
+    private String descripcion;
     private String nombre;
-    private Integer capacidad;
+    //private Consumo consumosNumeroFactura; -> Falta hacer esta clase de Consumo
 
-    public Servicio(){;}
-
-    public Servicio(String nombre,Integer capacidad)
-    {
+    public Servicio(String descripcion, String nombre)
+    {   
         this.nombre = nombre;
-        this.capacidad = capacidad;
+        this.descripcion = descripcion;
     }
+
+    public Servicio()
+    {;}
 
     public Integer getId() {
-        return id;
+        return id_servicio;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public String getDescripcion() {
+        return descripcion;
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public void setId(Integer id_servicio) {
+        this.id_servicio = id_servicio;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
     
-    public Integer getCapacidad() {
-        return capacidad;
-    }
-
-    public void setCapacidad(Integer capacidad) {
-        this.capacidad = capacidad;
-    }
-
-    @Override
-    public String toString()
-    {
-        return this.nombre+"|"+this.capacidad;
-    }
     
 }

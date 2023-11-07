@@ -10,27 +10,27 @@ import org.springframework.transaction.annotation.Transactional;
 
 import uniandes.edu.co.proyecto.modelo.PlanConsumo;
 
-public interface PlanConsumoRepository extends JpaRepository<PlanConsumo, Integer>{
+public interface PlanConsumoRepository extends JpaRepository<PlanConsumo, String>{
 
-    @Query (value = "SELECT * FROM planesConsumo", nativeQuery = true)
+    @Query(value = "SELECT * FROM planesconsumo", nativeQuery = true)
     Collection<PlanConsumo> darPlanesConsumo();
 
-    @Query (value = "SELECT * FROM planesConsumo WHERE id = :id", nativeQuery = true)
-    PlanConsumo darPlanConsumo(@Param("id") int id);
+    @Query(value = "SELECT * FROM planesconsumo WHERE nombre=:nombre", nativeQuery = true)
+    PlanConsumo darPlanConsumo(@Param("nombre") String nombre);
 
     @Modifying
     @Transactional
-    @Query (value = "INSERT INTO planesConsumo (id, nombre, noches, costo) VALUES (?,?,?)", nativeQuery = true)
-    void insertarPlanConsumo(@Param("nombre") String nombre, @Param("noches")int noches, @Param("costo") float costo);
-
-    @Modifying
-    @Transactional
-    @Query (value = "UPDATE planesConsumo SET nombre = :nombre, noches = :noches, costo = :costo WHERE id = :id", nativeQuery = true)
-    void actualizarPlanConsumo(@Param("id") int id, @Param("nombre") String PlanConsumo, @Param("correo")int noches, @Param("costo") float costo);
-
-    @Modifying
-    @Transactional
-    @Query (value = "DELETE FROM planesConsumo WHERE id = :id", nativeQuery = true)
-    void eliminarPlanConsumo(@Param("id") int id);
+    @Query(value = "INSERT INTO planesconsumo (nombre, descripcion) VALUES ( :nombre, :descripcion)", nativeQuery = true)
+    void insertarPlanConsumo(@Param("nombre") String nombre, @Param("descripcion") String descripcion);
     
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE planesconsumo SET descripcion = :descripcion WHERE nombre=:nombre", nativeQuery = true)
+    void actualizarPlanConsumo(@Param("nombre") String nombre, @Param("descripcion") String descripcion);
+
+    @Modifying
+    @Transactional
+    @Query(value = "DELETE FROM planesconsumo WHERE nombre=:nombre", nativeQuery = true)
+    void eliminarPlanConsumo(@Param("nombre") String nombre);
+
 }

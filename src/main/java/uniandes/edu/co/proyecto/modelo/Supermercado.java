@@ -1,35 +1,37 @@
+/* 
+
 package uniandes.edu.co.proyecto.modelo;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+
+
+import jakarta.persistence.*;
 
 @Entity
-@Table(name="supermercado")
+@Table(name="supermercados")
+
 
 public class Supermercado {
-    private Integer id;
-    private String nombre;
 
-    public Supermercado(){;}
+    @Id
+    @OneToOne
+    @JoinColumn(name = "id_servicio", referencedColumnName = "id")
+    private Servicio id_servicio;
 
-    public Supermercado(String nombre)
-    {
-        this.nombre = nombre;
+    public Supermercado(Servicio id_servicio) {
+        this.id_servicio = id_servicio;
     }
 
-    public Integer getId() {
-        return id;
+    public Supermercado() 
+    {;}
+
+    public Servicio getId_servicio() {
+        return id_servicio;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId_servicio(Servicio id_servicio) {
+        this.id_servicio = id_servicio;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
     
 }
+
+*/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones | Hotel de los Andes</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <style>
+        .custom-table {
+            background-color: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://wallpapercave.com/wp/wp2978951.jpg'); text-align: center;" >
+    <div class="container">
+        <div><p style="text-align: center; font-family: sans-serif; font-size: 40px;  font-weight: bold; margin-bottom: 50px;">Listado de habitaciones</p></div>
+        <div style="display: flex; margin-bottom: 20px;">
+            <div><a th:href="@{/}" class="btn btn-primary">Volver a la pestaña anterior</a></div>
+            <div style="margin-left: 682px;"><a th:href="@{habitaciones/new}" class="btn btn-primary">Añadir nueva habitación</a></div>
+        </div>
+        <table class="table custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Numero</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <th:block th:each="habitacion:${habitaciones}">
+                    <tr>
+                        <td th:text="${habitacion.numero}"></td>
+                        <td th:text="${habitacion.tipoHabitacion.nombre}"></td>
+                        <td><a th:href="@{'habitaciones/' + ${habitacion.numero} + '/edit'}">Modificar</a></td>
+                        <td><a th:href="@{'habitaciones/' + ${habitacion.numero} + '/delete'}">Eliminar</a></td>
+                    </tr>
+                </th:block>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

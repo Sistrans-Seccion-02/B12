@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+    <form th:action="@{'/usuarios/' + ${numero_documento} + '/edit/save'}" th:object="${usuario}" method="post">
+        <div th:replace="~{fragments/usuarioForm :: usuarioForm(titulo='Editar Usuario', usuario=${usuario})}"></div>
+    </form>
+    
+</body>
+</html>
