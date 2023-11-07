@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Número de Habitación</th>
+            <th>Costo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <th:block th:each="consumo : ${consumos}">
+            <tr>
+                <td th:text="${consumo.numero}"></td>
+                <td th:text="${consumo.costo}"></td>
+            </tr>
+        </th:block>
+    </tbody>
+</table>

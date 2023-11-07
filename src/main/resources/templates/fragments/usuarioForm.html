@@ -35,15 +35,10 @@
             <input class="form-control " type="date" id="fecha_salida"
             name="fecha_salida" required th:value="${usuario.fecha_salida}"/>
 
-
-
             <label class="col-form-label">Tipo de Usuario</label>
             <input class="form-control" type="text" id="tiposusuario_nombre"
             name="tipoUsuario.nombre" required th:value="${usuario.tipoUsuario?.nombre}"/>
 
-            <label class="col-form-label">Plan de Consumo</label>
-            <input class="form-control" type="text" id="planesconsumo_nombre"
-            name="planConsumo.nombre" required th:value="${usuario.planConsumo?.nombre}"/>
 
             <div class="text-center">
                 <input type="submit" value="Guardar" class="btn btn-primary">

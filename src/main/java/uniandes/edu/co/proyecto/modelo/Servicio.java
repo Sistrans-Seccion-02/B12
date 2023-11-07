@@ -7,16 +7,11 @@ import jakarta.persistence.*;
 
 public class Servicio {
 
-
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id_servicio;
-
-
-
     private String descripcion;
     private String nombre;
-    //private Consumo consumosNumeroFactura; -> Falta hacer esta clase de Consumo
 
     public Servicio(String descripcion, String nombre)
     {   
