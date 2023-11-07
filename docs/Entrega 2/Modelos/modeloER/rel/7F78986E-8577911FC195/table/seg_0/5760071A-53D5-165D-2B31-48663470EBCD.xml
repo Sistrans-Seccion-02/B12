@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5760071A-53D5-165D-2B31-48663470EBCD" name="Consumos">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>C4E8BD5C-F464-69D4-D244-DDD9303BD523</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero_factura" id="4FEC3A84-5E70-39AF-4656-707F23E204AF">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>9CA43F89-48A8-D1C6-26C0-A48A45BCA69D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo" id="2DFE1D3D-991E-6171-7D53-E6318EFCA882">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>9112F3E9-1A0E-415B-4A20-D0441DBED100</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="AC8B0338-63B6-685C-00D4-93FEF1782784">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>5D691057-E3A4-3E93-1419-B3073186D4EE</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Habitaciones_numero" id="35AE997F-283B-2553-0B8A-A877F44F9010">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>712B73E1-B3ED-EF8E-F3CD-5F82F23C89AA</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C4D9A9B-B92E-5955-DAA5-2FFDAD9C251C" referredColumn="B00D3225-BA54-DB7F-9F9B-B6EB4B7264A6"/>
+</associations>
+</Column>
+<Column name="Servicios_id_servicio" id="3D5898C1-E1F9-43BF-3D56-4A51DE4E7E1E">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>231076DF-E885-1BEE-20EF-DF37C350CCDB</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC6B52DB-4308-2C83-C537-67B8D83E634B" referredColumn="F7C28001-D6FE-FD41-ED03-8A4556428F44"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC422D33-4BE6-5E8E-D6E8-F8C2822461BB" name="Consumos_PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>D3B3DC9F-77E3-5243-0318-6C8908EC4D08</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FEC3A84-5E70-39AF-4656-707F23E204AF"/>
+<colUsage columnID="35AE997F-283B-2553-0B8A-A877F44F9010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCD4AA37-3D37-C39F-88E5-80D3BEA3423D" name="Consumos__IDX">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2D3578AB-CBAC-78B2-D764-724A41FDA122</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3D5898C1-E1F9-43BF-3D56-4A51DE4E7E1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E15D29F-4EA9-1E49-9B1D-B6A9998E63E1" name="Consumos_Habitaciones_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>A6D966A6-D7F8-3C9A-47DA-BC69273D6856</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35AE997F-283B-2553-0B8A-A877F44F9010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9ACF11D8-163D-F9ED-BAFD-540E6AFADD61" name="Consumos_Servicios_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>2D3578AB-CBAC-78B2-D764-724A41FDA122</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D5898C1-E1F9-43BF-3D56-4A51DE4E7E1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

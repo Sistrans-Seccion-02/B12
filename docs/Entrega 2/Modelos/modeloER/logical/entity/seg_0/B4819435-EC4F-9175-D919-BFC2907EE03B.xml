@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4819435-EC4F-9175-D919-BFC2907EE03B" name="TiposUsuario">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:20:46 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre" id="6DB2CA49-82AF-7F61-960A-58BBDCDD388F">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:20:46 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="3E87D40C-8A86-9532-EFD0-842BA37F754C">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:20:46 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74EFECF9-D192-C73E-70D6-46CAD7EEEACE" name="planesconsumo PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:20:46 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6DB2CA49-82AF-7F61-960A-58BBDCDD388F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

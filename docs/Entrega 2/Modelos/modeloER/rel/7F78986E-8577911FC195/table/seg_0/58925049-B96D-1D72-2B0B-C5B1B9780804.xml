@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58925049-B96D-1D72-2B0B-C5B1B9780804" name="PlanesConsumo">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>2B099B73-5622-7020-AB8D-47D81C614017</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre" id="C835E052-6876-7D20-F956-C1137DB56174">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>233ADE83-11A2-B882-F324-44E0F591F772</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="0D75E9E4-5835-0F92-66AA-949B9EA2890F">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>9E4E1D1C-66B0-99AD-3107-0375BA9D6823</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuarios_numeros_documento" id="4B6EC53A-7F70-F4A1-31F0-C99FA7D08940">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>28681800-25ED-9AA4-3316-DA4BB9E8EE46</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F211024-62ED-6AFC-BC5A-55D0442712B9" referredColumn="63D5C3EA-49E8-D056-BC84-F1167D3BB8ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D630815-576B-337D-4226-8CBFC0094EDA" name="PlanesConsumo_PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>362DFEC5-D612-7FFC-81B1-2DD6BCE469E6</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C835E052-6876-7D20-F956-C1137DB56174"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4F9C27E-DEC5-6581-F92A-4E064A4B726B" name="PlanesConsumo__IDX">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8DB3C8F0-2874-C4F2-5B29-C8F9C413E0F0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4B6EC53A-7F70-F4A1-31F0-C99FA7D08940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE8DB7CA-CFED-DEAD-8F5F-3C0626F0828B" name="PlanesConsumo_Usuarios_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>8DB3C8F0-2874-C4F2-5B29-C8F9C413E0F0</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B6EC53A-7F70-F4A1-31F0-C99FA7D08940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

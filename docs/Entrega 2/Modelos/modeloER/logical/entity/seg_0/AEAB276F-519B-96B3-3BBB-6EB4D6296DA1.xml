@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AEAB276F-519B-96B3-3BBB-6EB4D6296DA1" name="Servicios">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:24:26 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_servicio" id="09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:24:36 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="3FB9E357-F574-14D5-E215-12308C0E07CB">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:24:56 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="A91BDC5F-3638-E2B1-E3A2-507A83922BE9">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:25:21 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="83EEDFE6-3874-3C54-60BC-6E1E28ABC8C3" name="Servicios PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:24:53 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

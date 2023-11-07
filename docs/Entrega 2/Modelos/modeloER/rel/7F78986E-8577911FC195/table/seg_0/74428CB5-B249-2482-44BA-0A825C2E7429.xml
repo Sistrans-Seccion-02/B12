@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74428CB5-B249-2482-44BA-0A825C2E7429" name="ServiciosSpa">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>F64507F2-29E4-8094-2336-18F9151C5A84</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_servicio" id="F8819E52-A102-8DA5-FFC0-F7CAF6D0B5EF">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="422F7C8D-2268-1E8E-E6E5-E559146C4EE9" referredColumn="F7C28001-D6FE-FD41-ED03-8A4556428F44"/>
+</associations>
+</Column>
+<Column name="costo" id="0EC70450-9004-8139-82D6-BC1F16A17C82">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>5CDEA884-7A0C-4ED1-13A4-182CCFF2555F</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8B6F8CC-1D02-131C-2870-D0CFAE35FC13" name="ServiciosSpa_PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>83EEDFE6-3874-3C54-60BC-6E1E28ABC8C3</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8819E52-A102-8DA5-FFC0-F7CAF6D0B5EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A3D1CD6-433F-31DC-F261-8EAE85F62EC6" name="ServiciosSpa_Servicios_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>7506A226-22FD-7A76-023E-AE1BFF0D1581</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8819E52-A102-8DA5-FFC0-F7CAF6D0B5EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

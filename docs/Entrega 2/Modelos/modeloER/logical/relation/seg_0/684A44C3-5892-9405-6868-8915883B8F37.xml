@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ProductoSupermercado" directorySegmentName="seg_0" id="684A44C3-5892-9405-6868-8915883B8F37">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:24:30 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<sourcePk>83EEDFE6-3874-3C54-60BC-6E1E28ABC8C3</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>55801310-AEB0-3002-7624-8F0CC66D6229</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>72650EC9-7130-C6C8-8228-A8ED3950C2E8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

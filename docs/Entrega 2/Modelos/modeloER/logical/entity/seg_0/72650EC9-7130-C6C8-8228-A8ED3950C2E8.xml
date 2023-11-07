@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="72650EC9-7130-C6C8-8228-A8ED3950C2E8" name="Productos">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:31:45 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="4472CA2D-3B13-6D8A-CD03-D5EFC89EDAC4">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:31:54 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="27626CA5-DB76-AF56-B824-715CB0FC2F04">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:32:06 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="B46D1E86-B9D5-F2CC-634F-EFE8E7113DEB">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:32:14 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="0D6BB401-6D99-4F89-BF15-EA3EE76A8EB2">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:24:30 UTC</createdTime>
+<generatorID>684A44C3-5892-9405-6868-8915883B8F37</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio1" id="9AAEF652-E0B5-FB6D-EFBB-D5CAEF718F6C">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:24:56 UTC</createdTime>
+<generatorID>EA946F99-AE1F-E0AC-FBDA-D73AACA49AC0</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio2" id="78C1B1B6-284D-DB44-EAA3-0F9753A2D66D">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:25:15 UTC</createdTime>
+<generatorID>27A0CEC8-1D2E-8743-91D3-D1DCD581C43B</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio3" id="22CCF7AC-5FD1-BF2F-5FE7-5ED8C7E1BBC8">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:25:26 UTC</createdTime>
+<generatorID>84B37255-0B9C-7328-F152-4F1C5BC2477D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DCF09351-5F4D-6936-B1E3-9039E02595B1" name="Productos PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:32:03 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4472CA2D-3B13-6D8A-CD03-D5EFC89EDAC4</attributeRef>
+<attributeRef>0D6BB401-6D99-4F89-BF15-EA3EE76A8EB2</attributeRef>
+<attributeRef>9AAEF652-E0B5-FB6D-EFBB-D5CAEF718F6C</attributeRef>
+<attributeRef>78C1B1B6-284D-DB44-EAA3-0F9753A2D66D</attributeRef>
+<attributeRef>22CCF7AC-5FD1-BF2F-5FE7-5ED8C7E1BBC8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56BD679F-2F59-6949-2CA2-8A93D5169831" name="Habitaciones">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:15:13 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero" id="97FE4865-7778-D81E-9D37-176618CD9A6E">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:15:25 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="15CCC81B-2BA4-DA60-B7DF-60919C7B2E87">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:27:23 UTC</createdTime>
+<generatorID>8A6287EE-46D7-5909-636B-D3EDB5B2244B</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>95C1D88B-8562-B4FF-EE49-FC4490471007</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F8929497-C990-6C17-C650-9EC5F8E67C2C" name="habitaciones PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:15:44 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>97FE4865-7778-D81E-9D37-176618CD9A6E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

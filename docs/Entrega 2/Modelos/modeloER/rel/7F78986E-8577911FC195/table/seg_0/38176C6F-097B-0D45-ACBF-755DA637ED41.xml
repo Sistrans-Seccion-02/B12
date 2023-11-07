@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38176C6F-097B-0D45-ACBF-755DA637ED41" name="Productos">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>72650EC9-7130-C6C8-8228-A8ED3950C2E8</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="93689BB2-D1DF-CCE7-130D-5BDDFB2CD418">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>4472CA2D-3B13-6D8A-CD03-D5EFC89EDAC4</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="367A9D20-C652-91C5-CFDF-76EA10C25F39">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>27626CA5-DB76-AF56-B824-715CB0FC2F04</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="B4B7DC68-2A46-6F95-FBEA-CE98AE2580BF">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>B46D1E86-B9D5-F2CC-634F-EFE8E7113DEB</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Supermercados_id_servicio" id="CA133AAF-4439-4BF6-971F-9D84B637A03C">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>0D6BB401-6D99-4F89-BF15-EA3EE76A8EB2</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62D97FDC-D659-1583-BF87-0965334C5621" referredColumn="8E96C7B6-7802-D43A-C086-C1E7990C2D6A"/>
+</associations>
+</Column>
+<Column name="Tiendas_id_servicio" id="D9E257B0-79BD-17E7-A300-5DA6B91ECD73">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>9AAEF652-E0B5-FB6D-EFBB-D5CAEF718F6C</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4C67A8D-4433-B552-6EF5-394DA8B62553" referredColumn="02BC4D17-2165-202E-E37D-4B8184150E3D"/>
+</associations>
+</Column>
+<Column name="Restaurantes_id_servicio" id="3CBF87BD-84AC-8FBF-3F8F-AF950FD56DC7">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>78C1B1B6-284D-DB44-EAA3-0F9753A2D66D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57EBDFAF-8B94-5C67-2360-32AE09012232" referredColumn="56E7251B-4375-7FE6-82C8-15E7506B0A04"/>
+</associations>
+</Column>
+<Column name="Bares_id_servicio" id="DA2AB5C3-0193-D07F-FAB5-2D4221DBED2A">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>22CCF7AC-5FD1-BF2F-5FE7-5ED8C7E1BBC8</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AA440BC-8947-DA12-9EE5-67E73B2BD067" referredColumn="A71E3A3D-2FB0-3EA6-EC83-05966354CEF4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="40D9D4C2-4949-0C30-22BC-43FBC502B07F" name="Productos_PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>DCF09351-5F4D-6936-B1E3-9039E02595B1</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93689BB2-D1DF-CCE7-130D-5BDDFB2CD418"/>
+<colUsage columnID="CA133AAF-4439-4BF6-971F-9D84B637A03C"/>
+<colUsage columnID="D9E257B0-79BD-17E7-A300-5DA6B91ECD73"/>
+<colUsage columnID="3CBF87BD-84AC-8FBF-3F8F-AF950FD56DC7"/>
+<colUsage columnID="DA2AB5C3-0193-D07F-FAB5-2D4221DBED2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0680871-F9D2-15A7-7D7C-F121FF4400EF" name="Productos_Bares_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>84B37255-0B9C-7328-F152-4F1C5BC2477D</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA2AB5C3-0193-D07F-FAB5-2D4221DBED2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="072387D8-C33C-2462-A4B3-349B75E4D40B" name="Productos_Restaurantes_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>27A0CEC8-1D2E-8743-91D3-D1DCD581C43B</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CBF87BD-84AC-8FBF-3F8F-AF950FD56DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC4520A2-2043-7178-2DC7-C4FF644607EB" name="Productos_Supermercados_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>684A44C3-5892-9405-6868-8915883B8F37</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA133AAF-4439-4BF6-971F-9D84B637A03C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C66E00FD-DBBC-EDCC-1672-9044C083777F" name="Productos_Tiendas_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>EA946F99-AE1F-E0AC-FBDA-D73AACA49AC0</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9E257B0-79BD-17E7-A300-5DA6B91ECD73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

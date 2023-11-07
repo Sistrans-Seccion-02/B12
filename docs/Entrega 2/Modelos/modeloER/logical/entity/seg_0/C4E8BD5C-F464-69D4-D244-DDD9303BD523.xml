@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4E8BD5C-F464-69D4-D244-DDD9303BD523" name="Consumos">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:23:28 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_factura" id="9CA43F89-48A8-D1C6-26C0-A48A45BCA69D">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:23:40 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo" id="9112F3E9-1A0E-415B-4A20-D0441DBED100">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:23:57 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="5D691057-E3A4-3E93-1419-B3073186D4EE">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:24:08 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="712B73E1-B3ED-EF8E-F3CD-5F82F23C89AA">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:23:10 UTC</createdTime>
+<generatorID>A6D966A6-D7F8-3C9A-47DA-BC69273D6856</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>97FE4865-7778-D81E-9D37-176618CD9A6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_servicio" id="231076DF-E885-1BEE-20EF-DF37C350CCDB">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:24:00 UTC</createdTime>
+<generatorID>2D3578AB-CBAC-78B2-D764-724A41FDA122</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<referedAttribute>09E2BD8B-FFF8-CED0-6C38-3A02EDD9D835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D3B3DC9F-77E3-5243-0318-6C8908EC4D08" name="Consumos PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-06 22:23:55 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CA43F89-48A8-D1C6-26C0-A48A45BCA69D</attributeRef>
+<attributeRef>712B73E1-B3ED-EF8E-F3CD-5F82F23C89AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

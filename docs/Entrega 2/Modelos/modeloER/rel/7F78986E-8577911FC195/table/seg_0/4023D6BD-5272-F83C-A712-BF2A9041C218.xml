@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4023D6BD-5272-F83C-A712-BF2A9041C218" name="Habitaciones">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>56BD679F-2F59-6949-2CA2-8A93D5169831</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numero" id="B00D3225-BA54-DB7F-9F9B-B6EB4B7264A6">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>97FE4865-7778-D81E-9D37-176618CD9A6E</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TiposHabitacion_nombre" id="785C009A-57CD-E6A4-95BA-8C3F7DA3F02D">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>15CCC81B-2BA4-DA60-B7DF-60919C7B2E87</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E2CEB6D-7DCE-8027-4BC1-A071E4FF032E" referredColumn="26A879C7-9001-50D1-EFCD-698CA5EE202D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7F88B94-2AB6-F062-B79C-4A4729D05373" name="Habitaciones_PK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>F8929497-C990-6C17-C650-9EC5F8E67C2C</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B00D3225-BA54-DB7F-9F9B-B6EB4B7264A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA84D5CA-FDD6-EA77-7D15-AE2C15F05DD6" name="Habitaciones__IDX">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8A6287EE-46D7-5909-636B-D3EDB5B2244B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="785C009A-57CD-E6A4-95BA-8C3F7DA3F02D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C23BE589-D71D-1807-E647-3147712ADB8F" name="Habitaciones_TiposHab_FK">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:31:34 UTC</createdTime>
+<generatorID>8A6287EE-46D7-5909-636B-D3EDB5B2244B</generatorID>
+<ownerDesignName>modeloER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="785C009A-57CD-E6A4-95BA-8C3F7DA3F02D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

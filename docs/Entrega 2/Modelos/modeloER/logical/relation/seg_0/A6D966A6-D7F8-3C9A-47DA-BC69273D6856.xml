@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ConsumoHabitacion" directorySegmentName="seg_0" id="A6D966A6-D7F8-3C9A-47DA-BC69273D6856">
+<createdBy>santi</createdBy>
+<createdTime>2023-11-07 00:23:10 UTC</createdTime>
+<ownerDesignName>modeloER</ownerDesignName>
+<engineerTo>
+<item key="7F78986E-774B-DB45-BA47-8577911FC195" value="true"/>
+</engineerTo>
+<sourcePk>F8929497-C990-6C17-C650-9EC5F8E67C2C</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>56BD679F-2F59-6949-2CA2-8A93D5169831</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C4E8BD5C-F464-69D4-D244-DDD9303BD523</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
