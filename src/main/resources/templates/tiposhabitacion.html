@@ -16,6 +16,10 @@
 <body style="background-image: url('https://wallpapercave.com/wp/wp2978951.jpg'); text-align: center;" >
     <div class="container">
         <div><p style="text-align: center; font-family: sans-serif; font-size: 40px;  font-weight: bold; margin-bottom: 50px;">Tipos de habitaciones</p></div>
+        <div style="display: flex; margin-bottom: 20px;">
+            <div><a th:href="@{/}" class="btn btn-primary">Volver a la pestaña anterior</a></div>
+            <div style="margin-left: 730px;"><a th:href="@{tiposhabitacion/new}" class="btn btn-primary">Añadir nuevo tipo</a></div>
+        </div>
         <table class="table custom-table">
             <thead class="thead-dark">
                 <tr>
@@ -38,10 +42,6 @@
                 </th:block>
             </tbody>
         </table>
-        <div style="display: flex; margin-bottom: 20px;">
-            <div><a th:href="@{/}" class="btn btn-primary">Volver a la pestaña anterior</a></div>
-            <div style="margin-left: 730px;"><a th:href="@{tiposhabitacion/new}" class="btn btn-primary">Añadir nuevo tipo</a></div>
-        </div>
     </div>
 </body>
 </html>
