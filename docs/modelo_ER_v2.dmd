@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_ER_v2" id="175589F1-725A-C64F-54F9-AED743B88434" version="3.5">
-<createdBy>valeriatorresgomez</createdBy>
-<createdTime>2023-11-05 02:19:20 UTC</createdTime>
-<ownerDesignName>modelo_ER_v2</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>175589F1-725A-C64F-54F9-AED743B88434</designId>
-</OSDM_Design>
