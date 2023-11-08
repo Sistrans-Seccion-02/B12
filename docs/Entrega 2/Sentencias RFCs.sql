@@ -1,4 +1,5 @@
 --RFC1 - MOSTRAR EL DINERO RECOLECTADO POR SERVICIOS EN CADA HABITACIÓN EN EL ÚLTIMO AÑO CORRIDO
+
 Select h.numero, co.costo
 FROM Consumos Co, Habitaciones H, Servicios S
 WHERE co.habitaciones_numero = H.numero
@@ -14,7 +15,17 @@ ORDER BY popularidad DESC;
 
 
 --RFC3 - MOSTRAR EL ÍNDICE DE OCUPACIÓN DE CADA UNA DE LAS HABITACIONES DEL HOTEL
-
+SELECT
+    H.numero,
+    (SUM(TO_DATE(Fecha_Fin, 'YYYY-MM-DD') - TO_DATE(Fecha_Inicio, 'YYYY-MM-DD')) * 100.0 / 365) AS IndiceOcupacion
+FROM
+    HabitacionUsuario HU
+JOIN
+    Habitaciones H ON hu.habitaciones_numero = H.numero
+WHERE
+    (TO_DATE(Fecha_Fin, 'YYYY-MM-DD') >= (TO_DATE(Fecha_Inicio, 'YYYY-MM-DD')))
+GROUP BY
+    H.numero;
 
 
 --RFC4 - MOSTRAR LOS SERVICIOS QUE CUMPLEN CON CIERTA CARACTERÍSTICA
@@ -78,11 +89,28 @@ Order by CantidadDemandas asc;
 
 --RFC9 - CONSULTAR CONSUMO EN HOTELANDES
 
-
+SELECT u.nombre, s.nombre
+FROM HabitacionUsuario hu, Usuarios u, habitaciones h, consumos co, servicios s
+WHERE hu.usuarios_numeros_documento = u.numero_documento
+AND hu.habitaciones_numero = h.numero
+AND h.numero = co.habitaciones_numero
+AND co.servicios_id_servicio = s.id_servicio
+AND s.id_servicio = 12
+ORDER BY u.nombre ASC;
 
 --RFC10 - CONSULTAR CONSUMO EN HOTELANDES – RFC9-V2
 
-
+SELECT u.nombre, consul.nombre
+FROM HabitacionUsuario hu, Usuarios u, habitaciones h,
+(
+SELECT co.habitaciones_numero, s.id_servicio, s.nombre
+FROM Consumos co, Servicios s
+Where co.servicios_id_servicio = s.id_servicio
+) consul
+WHERE hu.usuarios_numeros_documento = u.numero_documento
+AND h.numero = hu.habitaciones_numero
+AND consul.habitaciones_numero = h.numero
+AND consul.id_servicio != 10;
 
 --RFC11 - CONSULTAR FUNCIONAMIENTO
 
