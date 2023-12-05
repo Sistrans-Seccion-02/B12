@@ -1,0 +1,559 @@
+RF1 - Tipo de Habitación  
+
+Crear (Registrar) un nuevo tipo de habitación: 
+
+  
+
+db.TipoHabitaciones.insert({ 
+
+  nombre: "Suite" 
+
+}); 
+
+  
+
+Leer (Consultar) los tipos de habitaciones: 
+
+db.TipoHabitaciones.find({}); 
+
+  
+
+  
+
+Actualizar un tipo de habitación: 
+
+db.TipoHabitaciones.update( 
+
+  { _id: ObjectId("id_del_tipo_de_habitacion") }, 
+
+  { $set: { nombre: "Deluxe Suite" } } 
+
+); 
+
+  
+
+Eliminar un tipo de habitación: 
+
+db.TipoHabitaciones.remove({ _id: ObjectId("id_del_tipo_de_habitacion") }); 
+
+  
+
+  
+
+  
+
+RF2 - Habitación  
+
+Crear (Registrar) una nueva habitación: 
+
+db.Habitaciones.insert({ 
+
+  numero: 101, 
+
+  tipoHabitacion: ObjectId("id_del_tipo_de_habitacion"), 
+
+}); 
+
+  
+
+Leer (Consultar) las habitaciones: 
+
+db.Habitaciones.find({}); 
+
+  
+
+Actualizar una habitación: 
+
+db.Habitaciones.update( 
+
+  { _id: ObjectId("id_de_la_habitacion") }, 
+
+  { $set: { numero: 102 } } 
+
+); 
+
+  
+
+Eliminar una habitación: 
+
+db.Habitaciones.remove({ _id: ObjectId("id_de_la_habitacion") }); 
+
+ 
+
+  
+
+RF3 - Servicio del Hotel 
+
+  
+
+Crear (Registrar) un nuevo servicio: 
+
+db.Servicios.insert({ 
+
+  nombre: "Spa", 
+
+}); 
+
+  
+
+Leer (Consultar) los servicios: 
+
+db.Servicios.find({}); 
+
+  
+
+Actualizar un servicio: 
+
+db.Servicios.update( 
+
+  { _id: ObjectId("id_del_servicio") }, 
+
+  { $set: { nombre: "Bar" } } 
+
+); 
+
+  
+
+  
+
+Eliminar un servicio: 
+
+db.Servicios.remove({ _id: ObjectId("id_del_servicio") }); 
+
+  
+
+  
+
+  
+
+  
+
+RF4 - Reserva de Alojamiento 
+
+  
+
+  
+
+Crear (Registrar) una nueva reserva: 
+
+db.Reservas.insert({ 
+
+  usuario: ObjectId("id_del_usuario"), 
+
+  habitacion: ObjectId("id_de_la_habitacion"), 
+
+  fecha_inicio: new Date("2023-12-20"), 
+
+  fecha_fin: new Date("2023-12-25"), 
+
+}); 
+
+  
+
+  
+
+Leer (Consultar) las reservas: 
+
+db.Reservas.find({}); 
+
+  
+
+  
+
+  
+
+Actualizar una reserva: 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva") }, 
+
+  { $set: { fecha_fin: new Date("2023-12-26") } } 
+
+); 
+
+  
+
+  
+
+Eliminar una reserva: 
+
+db.Reservas.remove({ _id: ObjectId("id_de_la_reserva") }); 
+
+  
+
+  
+
+  
+
+  
+
+RF5 - Llegada de un Cliente al Hotel  
+
+Registrar llegada: 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva") }, 
+
+  { $set: { llegada: true } } 
+
+); 
+
+  
+
+  
+
+Consultar llegadas: 
+
+db.Reservas.find({ llegada: true }); 
+
+  
+
+Actualizar una llegada: 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva"), llegada: true }, 
+
+  { $set: { "detalles.llegada": new Date("2023-12-20T14:00:00Z") } } 
+
+); 
+
+ 
+
+Eliminar registro de llegada: 
+
+  
+
+javascript 
+
+Copy code 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva") }, 
+
+  { $unset: { llegada: "" } } 
+
+); 
+
+  
+
+  
+
+  
+
+  
+
+RF7 - Salida de un Cliente  
+
+Registrar salida: 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva") }, 
+
+  { $set: { salida: true } }  
+
+); 
+
+  
+
+  
+
+Consultar salidas: 
+
+db.Reservas.find({ salida: true }); 
+
+  
+
+  
+
+  
+
+Actualizar registro de salida: 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva"), salida: true }, 
+
+  { $set: { "detalles.salida": new Date("2023-12-25T10:00:00Z") } } 
+
+); 
+
+  
+
+  
+
+Eliminar registro de salida: 
+
+db.Reservas.update( 
+
+  { _id: ObjectId("id_de_la_reserva") }, 
+
+  { $unset: { salida: "" } } 
+
+); 
+
+  
+
+  
+
+  
+
+REQUERIMIENTOS FUNCIONALES DE CONSULTA BÁSICOS  
+
+  
+
+  
+
+  
+
+RFC1 - Dinero Recogido por Servicios en Cada Habitación en el Último Año###### 
+
+  
+
+db.Reservas.aggregate([ 
+
+  { 
+
+    $match: { 
+
+      fecha_inicio: { 
+
+        $gte: new Date('2023-01-01T00:00:00.000Z')  
+
+      } 
+
+    } 
+
+  }, 
+
+  { 
+
+    $unwind: "$consumos" 
+
+  }, 
+
+  { 
+
+    $group: { 
+
+      _id: "$habitacion",  
+
+      dineroRecolectado: { $sum: "$consumos.valorTotal" }  
+
+    } 
+
+  } 
+
+]); 
+
+  
+
+  
+
+  
+
+RFC2 - Índice de Ocupación de Cada Habitación desde el 1 de Enero de 2023 
+
+  
+
+db.Reservas.aggregate([ 
+
+  { 
+
+    $match: { 
+
+      fecha_inicio: { 
+
+        $gte: new Date('2023-01-01T00:00:00.000Z')  
+
+      } 
+
+    } 
+
+  }, 
+
+  { 
+
+    $project: { 
+
+      habitacion: 1, 
+
+      diasOcupada: { 
+
+        $dateDiff: { 
+
+          startDate: { 
+
+            $max: ["$fecha_inicio", new Date('2022-01-01T00:00:00.000Z')] 
+
+          }, 
+
+          endDate: { 
+
+            $min: ["$fecha_fin", new Date()] 
+
+          }, 
+
+          unit: "day" 
+
+        } 
+
+      } 
+
+    } 
+
+  }, 
+
+  { 
+
+    $group: { 
+
+      _id: "$habitacion", 
+
+      diasTotalesOcupados: { $sum: "$diasOcupada" } 
+
+    } 
+
+  }, 
+
+  { 
+
+    $project: { 
+
+      indiceOcupacion: { 
+
+        $divide: ["$diasTotalesOcupados", { 
+
+          $dateDiff: { 
+
+            startDate: new Date('2022-01-01T00:00:00.000Z'), 
+
+            endDate: new Date(), 
+
+            unit: "day" 
+
+          } 
+
+        }] 
+
+      } 
+
+    } 
+
+  } 
+
+]); 
+
+  
+
+ 
+
+ 
+
+RFC3 - Consumo en el Hotel por un Cliente desde el 1 de Enero de 2023 
+
+  
+
+db.Consumos.aggregate([ 
+
+  { 
+
+    $match: { 
+
+      fecha: { 
+
+        $gte: new Date('2023-01-01T00:00:00.000Z'),  
+
+        $lte: new Date('2024-01-01T00:00:00.000Z') 
+
+      }, 
+
+      usuario: ObjectId("id_del_cliente")  
+
+    } 
+
+  }, 
+
+  { 
+
+    $group: { 
+
+      _id: "$usuario", 
+
+      consumoTotal: { $sum: "$valorTotal" }  
+
+    } 
+
+  } 
+
+]); 
+
+RFC4
+db.getCollection('reservas').aggregate(
+  [
+    {
+      $match: {
+        fecha_inicio: {
+          $gte: ISODate(
+            '2023-01-01T00:00:00.000Z'
+          )
+        },
+        fecha_fin: {
+          $lte: ISODate(
+            '2024-01-01T00:00:00.000Z'
+          )
+        }
+      }
+    },
+    { $unwind: { path: '$consumo' } },
+    {
+      $match: {
+        'consumo.fecha': {
+          $gte: ISODate(
+            '2023-01-01T00:00:00.000Z'
+          ),
+          $lte: ISODate(
+            '2024-01-01T00:00:00.000Z'
+          )
+        }
+      }
+    },
+    {
+      $lookup: {
+        from: 'usuarios',
+        localField: 'usuario',
+        foreignField: '_id',
+        as: 'infoCliente'
+      }
+    },
+    { $unwind: { path: '$infoCliente' } },
+    {
+      $group: {
+        _id: {
+          cliente: '$infoCliente',
+          fecha: '$consumo.fecha'
+        },
+        numeroVecesUsado: { $sum: 1 }
+      }
+    },
+    {
+      $sort: {
+        numeroVecesUsado: -1,
+        '_id.fecha': 1
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        cliente: '$_id.cliente',
+        fecha: '$_id.fecha',
+        numeroVecesUsado: 1
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

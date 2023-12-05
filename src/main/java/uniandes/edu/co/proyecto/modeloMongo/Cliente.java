@@ -26,6 +26,8 @@ public class Cliente {
     @DBRef
     private Habitacion habitacion;
 
+    public Cliente(){};
+
     public Cliente(Integer id, String nombre, String apellido, List<String> datosAdicionales) {
         this.id = id;
         this.nombre = nombre;

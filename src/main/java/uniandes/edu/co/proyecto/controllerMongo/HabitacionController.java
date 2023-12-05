@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import uniandes.edu.co.proyecto.modeloMongo.Habitacion;
-import uniandes.edu.co.proyecto.repositorio.HabitacionRepository;
-import uniandes.edu.co.proyecto.repositorio.TipoHabitacionRepository;
+import uniandes.edu.co.proyecto.RepositorioMongo.HabitacionRepository;
+import uniandes.edu.co.proyecto.RepositorioMongo.TipoHabitacionRepository;
 
 @Controller
 public class HabitacionController {
@@ -30,19 +30,9 @@ public class HabitacionController {
         return "habitacionNuevo";
     }
 
-    @PostMapping("/mongo-habitaciones/new/save")
-    public String habitacionGuardar(Model model, @ModelAttribute Habitacion habitacion) {
-        try {
-            habitacionRepository.save(habitacion);
-        } catch (Exception e) {
-            model.addAttribute("error", "No se pudo guardar la habitacion. No cumple la validación :(");
-        }
-        return "redirect:/mongo-habitaciones";
-    }
-
     @GetMapping("/mongo-habitaciones/{id}/edit")
-    public String habitacionEditarForm(@PathVariable("id") String id, Model model) {
-        Habitacion habitacion = habitacionRepository.findById(id).orElse(null);
+    public String habitacionEditarForm(@PathVariable("id") Integer id, Model model) {
+        Habitacion habitacion = habitacionRepository.buscarPorId(id).orElse(null);
         if (habitacion != null) {
             model.addAttribute("habitacion", habitacion);
             model.addAttribute("tiposHabitacion", tipoHabitacionRepository.findAll());
@@ -52,20 +42,9 @@ public class HabitacionController {
         }
     }
 
-    @PostMapping("/mongo-habitaciones/{id}/edit/save")
-    public String habitacionEditarGuardar(Model model, @PathVariable("id") String id,
-            @ModelAttribute Habitacion habitacion) {
-        try {
-            habitacionRepository.save(habitacion);
-        } catch (Exception e) {
-            model.addAttribute("error", "No se pudo actualizar. No cumple la validación :(");
-        }
-        return "redirect:/mongo-habitaciones";
-    }
-
     @GetMapping("/mongo-habitaciones/{id}/delete")
     public String habitacionEliminar(@PathVariable("id") String id) {
-        habitacionRepository.deleteById(id);
+        habitacionRepository.eliminarHabitacion(id);;
         return "redirect:/mongo-habitaciones";
     }
 }

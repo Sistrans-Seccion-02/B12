@@ -69,6 +69,10 @@ public class Habitacion {
         return tipoHabitacion;
     }
 
+    public Habitacion orElse(Object object) {
+        return null;
+    }
+
     
 
 }

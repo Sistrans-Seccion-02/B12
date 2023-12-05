@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import uniandes.edu.co.proyecto.modeloMongo.TipoHabitacion;
-import uniandes.edu.co.proyecto.repositorio.TipoHabitacionRepository;
+import uniandes.edu.co.proyecto.RepositorioMongo.TipoHabitacionRepository;
 
 @Controller
 public class TipoHabitacionController {

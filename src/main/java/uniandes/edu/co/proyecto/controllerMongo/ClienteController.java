@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import uniandes.edu.co.proyecto.modeloMongo.Cliente;
-import uniandes.edu.co.proyecto.repositorio.ClienteRepository;
+import uniandes.edu.co.proyecto.RepositorioMongo.ClienteRepository;
 import uniandes.edu.co.proyecto.repositorio.HabitacionRepository;
 
 import java.util.List;
@@ -44,7 +44,7 @@ public class ClienteController {
 
     @GetMapping("/mongo-clientes/{id}/edit")
     public String clienteEditarForm(@PathVariable("id") Integer id, Model model) {
-        Cliente cliente = clienteRepository.findById(id).orElse(null);
+        Cliente cliente = clienteRepository.buscarPorId(id).orElse(null);
         if (cliente != null) {
             model.addAttribute("cliente", cliente);
             model.addAttribute("habitaciones", habitacionRepository.findAll());
